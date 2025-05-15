@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>More Details on Video Captioning Project</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/jobx.png"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Jerel Ong</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/jpeg/bitcoin.jpg"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title--big">Bitcoin Predictor</h3>
+              <p class="project-details__desc-para">
+                <strong>Project Type:</strong> SUTD Deep Learning Project<br>
+                <strong>Project Date:</strong> Jan 2025 – May 2025
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="projects__row-content-desc2">
+              Designed and implemented an LSTM-based deep learning model in PyTorch to predict the next-day closing price of Bitcoin. The model uses 10+ years of historical data with engineered time-based features like day of the week and month. Achieved a test MAPE of ~2.48% and RMSE of ~$2519.98, demonstrating solid short-term forecasting capability for financial time series.
+              </p>
+              <p class="projects__row-content-desc2">
+              Key innovations include:
+              </p>
+              <ul class="project-details__desc-list">
+                <li>
+                  <strong>Feature Engineering:</strong> Incorporated cyclical features such as day of the week and month to help the model learn temporal trends in trading behavior.
+                </li>
+                <li>
+                  <strong>Model Design:</strong> A 3-layer LSTM with 256 hidden units and a final fully connected layer was used to map sequence outputs to the next day’s closing price.
+                </li>
+                <li>
+                  <strong>Data Strategy:</strong> Utilized a 30-day lookback window with normalization and sequence generation tailored for time series forecasting.
+                </li>
+                <li>
+                  <strong>Real-world Simulation:</strong> An additional script that simulates how a person would use the LSTM model in a real world situation
+                </li>
+              </ul>
+              <div class="project-details__showcase-img-cont">
+                <img
+                  src="./assets/png/trngloss.png"
+                  alt="Project Image"
+                  class="project-details__showcase-img"
+                />
+              </div>
+              <div class="project-details__showcase-img-cont">
+                <img
+                  src="./assets/png/graph.png"
+                  alt="Project Image"
+                  class="project-details__showcase-img"
+                />
+              </div>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Key Contributions</h3>
+              <ul class="project-details__desc-list">
+                <li>
+                  <strong>Research:</strong> Evaluated existing solutions and selected LSTM and Seq2Seq as our final models
+                </li>
+                <li>
+                  <strong>Model Design:</strong> Designed architecture with dropout, skip connections, and layer normalization; trained using Adam optimizer and MSE loss. 
+                </li>
+                <li>
+                  <strong>Training:</strong> Experimented with different hyperparameters and strategies, and evaluated performance with the Seq2Seq model
+                </li>
+              </ul>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Skills and Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Jupyter</div>
+                <div class="skills__skill">PyTorch</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Project Links</h3>
+              <a
+                href="https://github.com/lerejbox/BitcoinPredictor"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
