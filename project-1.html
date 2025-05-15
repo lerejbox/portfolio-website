@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>More Details on Video Captioning Project</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/jobx.png"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Jerel Ong</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/jpeg/deepsub.jpeg"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title--big">Video Captioning in Military Scenarios</h3>
+              <p class="project-details__desc-para">
+                <strong>Role:</strong> AI Engineer<br>
+                <strong>Company:</strong> ST Engineering<br>
+                <strong>Project Date:</strong> Sept 2024 – May 2025
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                Our team was tasked to develop a video captioning system that can
+                <strong>generate captions for military scenarios.</strong> The system should be able generate 
+                <strong>detailed captions</strong> that describe the <strong>actions and events</strong> taking place in the video.
+                The system should also be able to generate captions that are relevant to the military context, such as identifying
+                specific objects, actions, and events that are relevant to military operations. We were also tasked to
+                ensure that the system is able to generate captions in <strong>real-time</strong>, so that it can be used in
+                live military operations. We named our final model <strong>DeepSub</strong>, a fine-tuned vision transformer model 
+                with <strong>InternVL2</strong> as the base open source model. With our evaluation, our new model has achieved about 
+                <strong>4x improvement</strong> in <strong>military object specificity</strong> when generating captions.
+              </p>
+            </div>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/png/live.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/png/results.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/png/finetuning.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/png/testimonial.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Key Contributions</h3>
+              <ul class="project-details__desc-list">
+                <li>
+                  <strong>Research:</strong> Conducted research on different architectures like CNNs, LSTMs and Transformers which eventually lead to the final decision of fine-tuning an open source
+                  vision transformer model.
+                </li>
+                <li>
+                  <strong>Dataset Curation:</strong> Filtered and processed a large-scale video dataset, using open-source multimodal embeddings to identify and extract domain-relevant content, complemented with human evaluation to ensure quality and relevance.
+                </li>
+                <li>
+                  <strong>Model Training:</strong> Supervised the process of finetuning the InternVL2 model and evaluation with the curated dataset.
+                </li>
+                <li>
+                  <strong>Model Evaluation:</strong> Evaluated the model performance using popular captioning metrics such as METEOR and SPICE, as well as a custom human metric that measures the military object specificity of the generated captions.
+                </li>
+              </ul>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Skills and Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">GIT</div>
+                <div class="skills__skill">Python</div>
+                <div class="skills__skill">Tensorflow</div>
+                <div class="skills__skill">Pytorch</div>
+                <div class="skills__skill">Huggingface</div>
+                <div class="skills__skill">Google Colab</div>
+                <div class="skills__skill">Kaggle</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
