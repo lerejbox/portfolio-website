@@ -582,7 +582,14 @@ textarea {
   width: 80%;
   margin: 4rem auto 6rem;
 }
-
+.project-details__showcase-img-cont2 {
+  width: 30%;
+  margin: 2rem auto 3rem;
+}
+.project-details__showcase-img-cont3 {
+  width: 100%;
+  margin: 2rem auto 3rem;
+}
 .project-details__showcase-img {
   width: 100%;
 }
