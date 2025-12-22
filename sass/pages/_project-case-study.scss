@@ -63,6 +63,12 @@
   &__showcase-img {
     width: 100%;
   }
+
+  &__showcase-img-cont3 {
+    & + & {
+      margin-top: 5rem;
+    }
+  }
   &__content-main {
     width: 100%;
     max-width: 70rem;
