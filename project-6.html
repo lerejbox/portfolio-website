@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>More Details on Video Captioning in Military Scenarios</title>
+    <title>More Details on PowerPoint Slides Compliance Report Generation with AI</title>
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -79,51 +79,44 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/deepsub.jpeg"
+              src="./assets/jpeg/project-1769859774639-667010139.png"
               alt="Project Image"
               class="project-details__showcase-img"
             />
           </div>
           <div class="project-details__content-main">
             <div class="project-details__desc">
-              <h3 class="project-details__content-title--big">Video Captioning in Military Scenarios</h3>
+              <h3 class="project-details__content-title--big">PowerPoint Slides Compliance Report Generation with AI</h3>
               <p class="project-details__desc-para">
-                <strong>Role:</strong> AI Engineer<br><strong>Company:</strong> ST Engineering<br><strong>Project Date:</strong> Sept 2024 – May 2025
+                <strong>Role:</strong> AI Software Engineer<br><strong>Company:</strong> Koltiva (Sugata)<br><strong>Project Date:</strong> 2025
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="projects__row-content-desc2">Our team was tasked to develop a video captioning system that can <strong>generate captions for military scenarios.</strong> The system should be able generate <strong>detailed captions</strong> that describe the <strong>actions and events</strong> taking place in the video.</p><p class="projects__row-content-desc2">The system should also be able to generate captions that are relevant to the military context, such as identifying specific objects, actions, and events that are relevant to military operations. We were also tasked to ensure that the system is able to generate captions in <strong>real-time</strong>, so that it can be used in live military operations.</p><p class="projects__row-content-desc2">We named our final model <strong>DeepSub</strong>, a fine-tuned vision transformer model with <strong>InternVL2</strong> as the base open source model. With our evaluation, our new model has achieved about <strong>4x improvement</strong> in <strong>military object specificity</strong> when generating captions.</p>
+              <p class="projects__row-content-desc2"><strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations.</p><p class="projects__row-content-desc2">In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.</p>
             </div>
             
             <div class="project-details__tools-used project-details__main-content">
-              <h3 class="project-details__content-title">Highlights</h3>
-              
+              <h3 class="project-details__content-title">Features</h3>
+              <p class="projects__row-content-desc2">- Custom compliance data is used to make the data.</p><p class="projects__row-content-desc2">- Agentic workflow that decides the layout, order of the slides, and which images to put together dynamically based on the data content</p><p class="projects__row-content-desc2">- Validation rules to consistently produce reliable slides. (e.g. check if there are content overflow)</p><p class="projects__row-content-desc2">These are some example slides during development. These are not part of the final product.</p>
               <div class="project-details__main-content-block">
                 <div class="project-details__showcase-img-cont3">
                   <img
-                    src="./assets/png/live.png"
+                    src="./assets/jpeg/project-1769875181183-870489118.png"
                     alt="Project Image"
                     class="project-details__showcase-img"
                   />
                 </div></div><div class="project-details__main-content-block">
                 <div class="project-details__showcase-img-cont3">
                   <img
-                    src="./assets/png/results.png"
+                    src="./assets/jpeg/project-1769875224032-52141928.png"
                     alt="Project Image"
                     class="project-details__showcase-img"
                   />
                 </div></div><div class="project-details__main-content-block">
                 <div class="project-details__showcase-img-cont3">
                   <img
-                    src="./assets/png/finetuning.png"
-                    alt="Project Image"
-                    class="project-details__showcase-img"
-                  />
-                </div></div><div class="project-details__main-content-block">
-                <div class="project-details__showcase-img-cont3">
-                  <img
-                    src="./assets/png/testimonial.png"
+                    src="./assets/jpeg/project-1769875230721-227269043.png"
                     alt="Project Image"
                     class="project-details__showcase-img"
                   />
@@ -135,10 +128,11 @@
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Key Contributions</h3>
               <ul class="project-details__desc-list">
-                <li><strong>Research:</strong> Conducted research on different architectures like CNNs, LSTMs and Transformers which eventually lead to the final decision of fine-tuning an open source vision transformer model.</li>
-                <li><strong>Dataset Curation:</strong> Filtered and processed a large-scale video dataset, using open-source multimodal embeddings to identify and extract domain-relevant content, complemented with human evaluation to ensure quality and relevance.</li>
-                <li><strong>Model Training:</strong> Supervised the process of finetuning the InternVL2 model and evaluation with the curated dataset.</li>
-                <li><strong>Model Evaluation:</strong> Evaluated the model performance using popular captioning metrics such as METEOR and SPICE, as well as a custom human metric that measures the military object specificity of the generated captions.</li>
+                <li><strong>Developed</strong> a robust data pipeline using <strong>pandas</strong>, incorporating comprehensive data validation checks and automated artifact generation to support client expected <strong>PPTX</strong> slide creation.</li>
+                <li><strong>Designed</strong> and <strong>implemented</strong> an <strong>AI-driven pipeline</strong> leveraging <strong>LLM APIs</strong> and the <strong>Strands Agents Framework</strong> to automatically extract, analyze, and summarize compliance data for efficient PowerPoint slide generation.</li>
+                <li><strong>Ensured</strong> consistent and reliable PowerPoint slide output by utilizing structured data models with <strong>Pydantic</strong> and implementing validation scripts within the <strong>html2pptx</strong> workflow, integrating <strong>pptxgenjs</strong>, <strong>Playwright</strong>, and <strong>Sharp</strong>.</li>
+                <li><strong>Developed</strong> a Human-in-the-Loop (<strong>HITL</strong>) workflow, enabling compliance managers to conveniently edit <strong>PPTX</strong> files through prompt-based interactions when manual adjustments are required.</li>
+                <li><strong>Conducted</strong> comprehensive evaluation and observability of <strong>LLM</strong> outputs using <strong>LLM-as-a-judge</strong> methodology and integrated monitoring with <strong>Langfuse</strong>.</li>
               </ul>
             </div>
             
@@ -146,26 +140,14 @@
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Skills and Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">GIT</div>
                 <div class="skills__skill">Python</div>
-                <div class="skills__skill">Tensorflow</div>
-                <div class="skills__skill">Pytorch</div>
-                <div class="skills__skill">Huggingface</div>
-                <div class="skills__skill">Google Colab</div>
-                <div class="skills__skill">Kaggle</div>
+                <div class="skills__skill">LLMs</div>
+                <div class="skills__skill">PowerPoint Automation</div>
+                <div class="skills__skill">Software Engineering</div>
+                <div class="skills__skill">HITL</div>
               </div>
             </div>
             
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">Project Links</h3>
-              
-              <a
-                href="https://capstoneshowcase.sutd.edu.sg/project/proj-15-stengineering-combat-ready-vision-ai/"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Project Details</a
-              >
-            </div>
           </div>
         </div>
       </div>

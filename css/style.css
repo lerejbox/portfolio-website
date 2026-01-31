@@ -661,6 +661,25 @@ textarea {
   }
 }
 
+/* --- Project Details: flexible main content section --- */
+.project-details__content-subtitle {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 0 0 1.5rem;
+  color: #333;
+}
+
+.project-details__main-content-block + .project-details__main-content-block {
+  margin-top: 3rem;
+}
+
+.project-details__image-title {
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
 .header {
   position: fixed;
   width: 100%;

@@ -1,0 +1,398 @@
+{
+  "details": [
+    {
+      "projectId": 1,
+      "heroImage": "./assets/jpeg/deepsub.jpeg",
+      "meta": {
+        "role": "AI Engineer",
+        "company": "ST Engineering",
+        "projectDate": "Sept 2024 – May 2025"
+      },
+      "overview": [
+        {
+          "type": "paragraph",
+          "content": "Our team was tasked to develop a video captioning system that can <strong>generate captions for military scenarios.</strong> The system should be able generate <strong>detailed captions</strong> that describe the <strong>actions and events</strong> taking place in the video."
+        },
+        {
+          "type": "paragraph",
+          "content": "The system should also be able to generate captions that are relevant to the military context, such as identifying specific objects, actions, and events that are relevant to military operations. We were also tasked to ensure that the system is able to generate captions in <strong>real-time</strong>, so that it can be used in live military operations."
+        },
+        {
+          "type": "paragraph",
+          "content": "We named our final model <strong>DeepSub</strong>, a fine-tuned vision transformer model with <strong>InternVL2</strong> as the base open source model. With our evaluation, our new model has achieved about <strong>4x improvement</strong> in <strong>military object specificity</strong> when generating captions."
+        }
+      ],
+      "mainContent": {
+        "title": "Highlights",
+        "description": "",
+        "blocks": [
+          {
+            "image": {
+              "src": "./assets/png/live.png"
+            }
+          },
+          {
+            "image": {
+              "src": "./assets/png/results.png"
+            }
+          },
+          {
+            "image": {
+              "src": "./assets/png/finetuning.png"
+            }
+          },
+          {
+            "image": {
+              "src": "./assets/png/testimonial.png"
+            }
+          }
+        ],
+        "conclusion": ""
+      },
+      "additionalImages": [
+        {
+          "src": "./assets/png/live.png",
+          "caption": ""
+        },
+        {
+          "src": "./assets/png/results.png",
+          "caption": ""
+        },
+        {
+          "src": "./assets/png/finetuning.png",
+          "caption": ""
+        },
+        {
+          "src": "./assets/png/testimonial.png",
+          "caption": ""
+        }
+      ],
+      "keyContributions": [
+        "<strong>Research:</strong> Conducted research on different architectures like CNNs, LSTMs and Transformers which eventually lead to the final decision of fine-tuning an open source vision transformer model.",
+        "<strong>Dataset Curation:</strong> Filtered and processed a large-scale video dataset, using open-source multimodal embeddings to identify and extract domain-relevant content, complemented with human evaluation to ensure quality and relevance.",
+        "<strong>Model Training:</strong> Supervised the process of finetuning the InternVL2 model and evaluation with the curated dataset.",
+        "<strong>Model Evaluation:</strong> Evaluated the model performance using popular captioning metrics such as METEOR and SPICE, as well as a custom human metric that measures the military object specificity of the generated captions."
+      ],
+      "futureDevelopment": [],
+      "skills": [
+        "GIT",
+        "Python",
+        "Tensorflow",
+        "Pytorch",
+        "Huggingface",
+        "Google Colab",
+        "Kaggle"
+      ],
+      "links": [
+        {
+          "label": "Project Details",
+          "url": "https://capstoneshowcase.sutd.edu.sg/project/proj-15-stengineering-combat-ready-vision-ai/"
+        }
+      ]
+    },
+    {
+      "projectId": 2,
+      "heroImage": "./assets/png/interfaith.png",
+      "meta": {
+        "role": "AI Web Developer",
+        "company": "Being Bridges",
+        "projectDate": "May 2023 – Aug 2023"
+      },
+      "overview": [
+        {
+          "type": "paragraph",
+          "content": "Our team partnered with a client promoting interfaith, interracial, and intercultural education to support trainers facing burnout from answering repetitive, sensitive questions. We developed an <strong>AI-powered web app</strong> that combines a <strong>curated FAQ system</strong> with a <strong>real-time chatbot</strong>, designed to <strong>handle complex topics</strong> respectfully and in line with the client's values."
+        },
+        {
+          "type": "paragraph",
+          "content": "The platform supports <strong>session-based customization</strong>, letting trainers tailor content and control access. A <strong>human-in-the-loop feedback system</strong> allows flagged responses to be reviewed and reused for few-shot training, enabling continuous improvement of the chatbot over time."
+        }
+      ],
+      "additionalImages": [],
+      "keyContributions": [
+        "Designed and implemented a custom chatbot system using Google Vertex AI and Flask, integrating behavior filters aligned with nuanced client requirements.",
+        "Deployed the application as a containerized service on Google Cloud Platform, ensuring modularity and scalability.",
+        "Proposed and built a human-in-the-loop feedback mechanism, allowing flagged responses to be reviewed by the client and reused as few-shot training examples, enabling iterative chatbot refinement."
+      ],
+      "skills": [
+        "GIT",
+        "Python",
+        "Flask",
+        "VertexAI",
+        "Google Cloud Platform"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://sites.google.com/mymail.sutd.edu.sg/team-innovate/home"
+        }
+      ]
+    },
+    {
+      "projectId": 3,
+      "heroImage": "./assets/jpeg/bitcoin.jpg",
+      "meta": {
+        "role": "",
+        "company": "",
+        "projectType": "SUTD Deep Learning Project",
+        "projectDate": "Jan 2025 – May 2025"
+      },
+      "overview": [
+        {
+          "type": "paragraph",
+          "content": "Designed and implemented an LSTM-based deep learning model in PyTorch to predict the next-day closing price of Bitcoin. The model uses 10+ years of historical data with engineered time-based features like day of the week and month. Achieved a test MAPE of ~2.48% and RMSE of ~$2519.98, demonstrating solid short-term forecasting capability for financial time series."
+        },
+        {
+          "type": "heading",
+          "content": "Key innovations include:"
+        },
+        {
+          "type": "bullet",
+          "content": "<strong>Feature Engineering:</strong> Incorporated cyclical features such as day of the week and month to help the model learn temporal trends in trading behavior."
+        },
+        {
+          "type": "bullet",
+          "content": "<strong>Model Design:</strong> A 3-layer LSTM with 256 hidden units and a final fully connected layer was used to map sequence outputs to the next day's closing price."
+        },
+        {
+          "type": "bullet",
+          "content": "<strong>Data Strategy:</strong> Utilized a 30-day lookback window with normalization and sequence generation tailored for time series forecasting."
+        },
+        {
+          "type": "bullet",
+          "content": "<strong>Real-world Simulation:</strong> An additional script that simulates how a person would use the LSTM model in a real world situation"
+        },
+        {
+          "type": "image",
+          "src": "./assets/png/trngloss.png",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "./assets/png/graph.png",
+          "caption": ""
+        }
+      ],
+      "additionalImages": [],
+      "keyContributions": [
+        "<strong>Research:</strong> Evaluated various approaches to time series forecasting and identified LSTM as the most suitable model for next-day Bitcoin price prediction.",
+        "<strong>Data Curation and Preprocessing:</strong> Curated and preprocessed a time series dataset of over 4,000 daily Bitcoin records, including data cleaning, normalization, sequence generation, and extraction of time-based features to ensure high-quality model inputs.",
+        "<strong>Model Training:</strong> Conducted extensive feature engineering and hyperparameter tuning, incorporating cyclical time-based features and optimizing model parameters (lookback window, layers, hidden units, dropout) to enhance training efficiency and predictive accuracy."
+      ],
+      "skills": [
+        "GIT",
+        "Python",
+        "Jupyter",
+        "PyTorch"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/lerejbox/BitcoinPredictor"
+        }
+      ]
+    },
+    {
+      "projectId": 4,
+      "heroImage": "./assets/png/ai-notes-icon-512x512.png",
+      "meta": {
+        "role": "",
+        "company": "",
+        "projectType": "SUTD Undergraduate Research Opportunities Project (UROP)",
+        "projectDate": "Aug 2023 – May 2024"
+      },
+      "overview": [
+        {
+          "type": "paragraph",
+          "content": "A custom-built AI chatbot interface designed to enhance the documentation and learning experience. This project integrates features such as folder management, search, colored-tag filtering, and a prompt library system to streamline user workflows."
+        },
+        {
+          "type": "note",
+          "content": "I am doing this project alone, and I have not finished all the features that I want to implement for this project. It is possible that I continue to develop this project. See the future development section for more details."
+        },
+        {
+          "type": "image",
+          "src": "./assets/png/filtering.png",
+          "caption": "Filtering with colored tags to categorize based on difficulty and topic. Example: easy = green, medium = yellow, hard = red."
+        },
+        {
+          "type": "image",
+          "src": "./assets/png/learning.png",
+          "caption": "Ask follow up questions at any point in time, be it during learning or reviewing."
+        }
+      ],
+      "additionalImages": [],
+      "keyContributions": [
+        "Designed a clean and user-friendly UI to improve usability and navigation.",
+        "Implemented folder management to organize conversations and notes efficiently.",
+        "Added colored-tag filtering for quick content categorization and difficulty level identification.",
+        "Built a prompt library feature to store and reuse effective LLM prompts, streamlining repetitive tasks."
+      ],
+      "futureDevelopment": [
+        "Flashcard-inspired review system, enabling users to revisit key insights and concepts discussed during AI interactions or stored in notes based on the difficulty level of the content from the tags.",
+        "Advanced search feature incorporating retrieval-augmented generation (RAG) for semantic search capabilities.",
+        "Add other LLM providers such as Claude and Gemini to allow users to choose their preferred AI model."
+      ],
+      "skills": [
+        "GIT",
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Vite"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/lerejbox/AiNotes"
+        }
+      ]
+    },
+    {
+      "projectId": 5,
+      "heroImage": "./assets/svg/research.svg",
+      "meta": {
+        "role": "",
+        "company": "",
+        "projectType": "Personal Project",
+        "projectDate": "Dec 2025 – Present"
+      },
+      "overview": [
+        {
+          "type": "paragraph",
+          "content": "A custom-built AI chatbot interface designed to do research about a given document or set of documents. It also supports <strong>website links</strong>. The main features of this project include <strong>document question answering</strong> and <strong>verification of answers</strong> from the AI assistant by displaying the relevant data used to generate the answer. The application is optimized document question answering using <strong>Retrieval Augmented Generation (RAG)</strong> techniques and <strong>AI agents</strong> to handle complex queries."
+        },
+        {
+          "type": "note",
+          "content": "I am doing this project alone, it is still a proof of concept and i have yet to implement all the features. It is possible that I continue to develop this project. See the future development section for more details."
+        },
+        {
+          "type": "image",
+          "src": "./assets/png/aires_home.png",
+          "caption": ""
+        },
+        {
+          "type": "image",
+          "src": "./assets/png/aires_highlight.png",
+          "caption": ""
+        },
+        {
+          "type": "paragraph",
+          "content": "As seen in the image above, you can verify the information by <strong>looking at the relevant sections highlighted from the provided documents.</strong> This feature enhances transparency and trust in the AI's responses, allowing users to see the source of the information and study the section in the document where the answer was derived from."
+        }
+      ],
+      "additionalImages": [],
+      "keyContributions": [],
+      "skills": [
+        "GIT",
+        "RAG",
+        "Python",
+        "Agents"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/lerejbox/aires"
+        },
+        {
+          "label": "Try it yourself",
+          "url": "https://aires-qqx1.onrender.com/"
+        }
+      ]
+    },
+    {
+      "projectId": 1769859777157,
+      "heroImage": "./assets/jpeg/project-1769859774639-667010139.png",
+      "meta": {
+        "role": "AI Software Engineer",
+        "company": "Koltiva (Sugata)",
+        "projectDate": "2025"
+      },
+      "overview": [
+        {
+          "type": "paragraph",
+          "content": "<strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations."
+        },
+        {
+          "type": "paragraph",
+          "content": "In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead."
+        }
+      ],
+      "mainContent": {
+        "title": "Features",
+        "description": "- Custom compliance data is used to make the data.\n\n- Agentic workflow that decides the layout, order of the slides, and which images to put together dynamically based on the data content\n\n- Validation rules to consistently produce reliable slides. (e.g. check if there are content overflow)\n\nThese are some example slides during development. These are not part of the final product.",
+        "blocks": [
+          {
+            "image": {
+              "src": "./assets/jpeg/project-1769875181183-870489118.png"
+            }
+          },
+          {
+            "image": {
+              "src": "./assets/jpeg/project-1769875224032-52141928.png"
+            }
+          },
+          {
+            "image": {
+              "src": "./assets/jpeg/project-1769875230721-227269043.png"
+            }
+          }
+        ],
+        "conclusion": ""
+      },
+      "additionalImages": [
+        {
+          "src": "./assets/jpeg/project-1769875181183-870489118.png",
+          "caption": "Example Slides"
+        },
+        {
+          "src": "./assets/jpeg/project-1769875224032-52141928.png",
+          "caption": ""
+        },
+        {
+          "src": "./assets/jpeg/project-1769875230721-227269043.png",
+          "caption": ""
+        }
+      ],
+      "keyContributions": [
+        "<strong>Developed</strong> a robust data pipeline using <strong>pandas</strong>, incorporating comprehensive data validation checks and automated artifact generation to support client expected <strong>PPTX</strong> slide creation.",
+        "<strong>Designed</strong> and <strong>implemented</strong> an <strong>AI-driven pipeline</strong> leveraging <strong>LLM APIs</strong> and the <strong>Strands Agents Framework</strong> to automatically extract, analyze, and summarize compliance data for efficient PowerPoint slide generation.",
+        "<strong>Ensured</strong> consistent and reliable PowerPoint slide output by utilizing structured data models with <strong>Pydantic</strong> and implementing validation scripts within the <strong>html2pptx</strong> workflow, integrating <strong>pptxgenjs</strong>, <strong>Playwright</strong>, and <strong>Sharp</strong>.",
+        "<strong>Developed</strong> a Human-in-the-Loop (<strong>HITL</strong>) workflow, enabling compliance managers to conveniently edit <strong>PPTX</strong> files through prompt-based interactions when manual adjustments are required.",
+        "<strong>Conducted</strong> comprehensive evaluation and observability of <strong>LLM</strong> outputs using <strong>LLM-as-a-judge</strong> methodology and integrated monitoring with <strong>Langfuse</strong>."
+      ],
+      "futureDevelopment": [],
+      "skills": [
+        "Python",
+        "LLMs",
+        "PowerPoint Automation",
+        "Software Engineering",
+        "HITL"
+      ],
+      "links": []
+    },
+    {
+      "projectId": 1769884659704,
+      "heroImage": "./assets/jpeg/project-placeholder.jpg",
+      "meta": {
+        "role": "",
+        "company": "",
+        "projectType": "",
+        "projectDate": "2026"
+      },
+      "overview": [
+        {
+          "type": "paragraph",
+          "content": "temp"
+        }
+      ],
+      "mainContent": null,
+      "additionalImages": [],
+      "keyContributions": [],
+      "futureDevelopment": [],
+      "skills": [],
+      "links": []
+    }
+  ]
+}
