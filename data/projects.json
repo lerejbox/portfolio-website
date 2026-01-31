@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "id": 1769859777157,
+      "title": "PowerPoint Slides Compliance Report Generation with AI",
+      "description": "<p><strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations. In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.</p>\n",
+      "image": "./assets/jpeg/project-1769859774639-667010139.png",
+      "imageStyle": "",
+      "centerImage": true,
+      "detailPage": "./project-6.html"
+    },
+    {
+      "id": 1,
+      "title": "Video Captioning in Military Scenarios",
+      "description": "Our team was tasked to develop a video captioning system that can <strong>generate captions for military scenarios.</strong> The system should be able generate <strong>detailed captions</strong> that describe the <strong>actions and events</strong> taking place in the video. The system should also be able to generate captions that are relevant to the military context, such as identifying specific objects, actions, and events that are relevant to military operations. We were also tasked to ensure that the system is able to generate captions in <strong>real-time</strong>, so that it can be used in live military operations. We named our final model <strong>DeepSub</strong>, a fine-tuned vision transformer model with <strong>InternVL2</strong> as the base open source model. With our evaluation, our new model has achieved about <strong>4x improvement</strong> in <strong>military object specificity</strong> when generating captions.",
+      "image": "./assets/jpeg/deepsub.jpeg",
+      "imageStyle": "",
+      "detailPage": "./project-1.html",
+      "centerImage": true
+    },
+    {
+      "id": 2,
+      "title": "Streamlining Religious Diversity Training with an AI Webapp",
+      "description": "<p class=\"projects__row-content-desc2\">Our team partnered with a client promoting interfaith, interracial, and intercultural education to support trainers facing burnout from answering repetitive, sensitive questions. We developed an <strong>AI-powered web app</strong> that combines a <strong>curated FAQ system</strong> with a <strong>real-time chatbot</strong>, designed to <strong>handle complex topics</strong> respectfully and in line with the client's values.</p><p class=\"projects__row-content-desc\">The platform supports <strong>session-based customization</strong>, letting trainers tailor content and control access. A <strong>human-in-the-loop feedback system</strong> allows flagged responses to be reviewed and reused for few-shot training, enabling continuous improvement of the chatbot over time.</p>",
+      "image": "./assets/png/interfaith.png",
+      "imageStyle": "",
+      "detailPage": "./project-2.html",
+      "centerImage": true
+    },
+    {
+      "id": 5,
+      "title": "AI-Powered Research Assistant",
+      "description": "Ask anything about the provided document(s) with specific references within the document(s). Webiste Links supported.",
+      "image": "./assets/svg/research.svg",
+      "imageStyle": "width: 300px; height: auto; display: block; margin: auto;",
+      "detailPage": "./project-5.html",
+      "centerImage": false
+    },
+    {
+      "id": 4,
+      "title": "AI-Powered Documentation & Learning Assistant",
+      "description": "A custom-built AI chatbot interface designed to enhance the documentation and learning experience. This project integrates features such as folder management, search, colored-tag filtering, and a prompt library system to streamline user workflows.",
+      "image": "./assets/png/ai-notes-icon-512x512.png",
+      "imageStyle": "width: 300px; height: auto; display: block; margin: auto;",
+      "detailPage": "./project-4.html",
+      "centerImage": false
+    },
+    {
+      "id": 3,
+      "title": "Bitcoin Predictor",
+      "description": "Designed and implemented an LSTM-based deep learning model in PyTorch to predict the next-day closing price of Bitcoin. The model uses 10+ years of historical data with engineered time-based features like day of the week and month. Achieved a test MAPE of ~2.48% and RMSE of ~$2519.98, demonstrating solid short-term forecasting capability for financial time series.",
+      "image": "./assets/jpeg/bitcoin.jpg",
+      "imageStyle": "",
+      "detailPage": "./project-3.html",
+      "centerImage": false
+    }
+  ]
+}
