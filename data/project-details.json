@@ -6,7 +6,7 @@
       "meta": {
         "role": "AI Engineer",
         "company": "ST Engineering",
-        "projectDate": "Sept 2024 – May 2025"
+        "projectDate": "Sept 2024 \u2013 May 2025"
       },
       "overview": [
         {
@@ -96,7 +96,7 @@
       "meta": {
         "role": "AI Web Developer",
         "company": "Being Bridges",
-        "projectDate": "May 2023 – Aug 2023"
+        "projectDate": "May 2023 \u2013 Aug 2023"
       },
       "overview": [
         {
@@ -135,7 +135,7 @@
         "role": "",
         "company": "",
         "projectType": "SUTD Deep Learning Project",
-        "projectDate": "Jan 2025 – May 2025"
+        "projectDate": "Jan 2025 \u2013 May 2025"
       },
       "overview": [
         {
@@ -199,7 +199,7 @@
         "role": "",
         "company": "",
         "projectType": "SUTD Undergraduate Research Opportunities Project (UROP)",
-        "projectDate": "Aug 2023 – May 2024"
+        "projectDate": "Aug 2023 \u2013 May 2024"
       },
       "overview": [
         {
@@ -256,7 +256,7 @@
         "role": "",
         "company": "",
         "projectType": "Personal Project",
-        "projectDate": "Dec 2025 – Present"
+        "projectDate": "Dec 2025 \u2013 Present"
       },
       "overview": [
         {
@@ -303,11 +303,11 @@
     },
     {
       "projectId": 1769859777157,
-      "heroImage": "./assets/jpeg/project-1769859774639-667010139.png",
+      "heroImage": "./assets/jpeg/aisg_logo.jpg",
       "meta": {
         "role": "AI Software Engineer",
-        "company": "Koltiva (Sugata)",
-        "projectDate": "2025"
+        "company": "AI Singapore",
+        "projectDate": "Sept 2025 to March 2026"
       },
       "overview": [
         {

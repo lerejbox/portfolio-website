@@ -4,7 +4,7 @@
       "id": 1769859777157,
       "title": "PowerPoint Slides Compliance Report Generation with AI",
       "description": "<p><strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations. In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.</p>\n",
-      "image": "./assets/jpeg/project-1769859774639-667010139.png",
+      "image": "./assets/jpeg/aisg_logo.jpg",
       "imageStyle": "",
       "centerImage": true,
       "detailPage": "./project-6.html"
