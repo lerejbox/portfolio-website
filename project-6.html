@@ -62,11 +62,9 @@
             <li class="header__sm-menu-link">
               <a href="./index.html"> Home </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#about"> About </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
             </li>
@@ -74,9 +72,12 @@
         </div>
       </div>
     </header>
+
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
+
+          <!-- Hero image -->
           <div class="project-details__showcase-img-cont">
             <img
               src="./assets/jpeg/project-1769859774639-667010139.png"
@@ -84,59 +85,84 @@
               class="project-details__showcase-img"
             />
           </div>
+
           <div class="project-details__content-main">
+
+            <!-- Title + metadata -->
             <div class="project-details__desc">
               <h3 class="project-details__content-title--big">PowerPoint Slides Compliance Report Generation with AI</h3>
-              <p class="project-details__desc-para">
-                <strong>Role:</strong> AI Software Engineer<br><strong>Company:</strong> Koltiva (Sugata)<br><strong>Project Date:</strong> 2025
-              </p>
+              <div class="project-details__meta" style="display:flex; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
+                <span><strong>Role:</strong> AI Software Engineer</span>
+                <span><strong>Company:</strong> Koltiva (Sugata)</span>
+                <span><strong>Year:</strong> 2025</span>
+              </div>
             </div>
+
+            <!-- Project Overview -->
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="projects__row-content-desc2"><strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations.</p><p class="projects__row-content-desc2">In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.</p>
+              <p class="projects__row-content-desc2">
+                <strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations.
+              </p>
+              <p class="projects__row-content-desc2">
+                In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.
+              </p>
             </div>
-            
-            <div class="project-details__tools-used project-details__main-content">
+
+            <!-- Features -->
+            <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Features</h3>
-              <p class="projects__row-content-desc2">- Custom compliance data is used to make the data.</p><p class="projects__row-content-desc2">- Agentic workflow that decides the layout, order of the slides, and which images to put together dynamically based on the data content</p><p class="projects__row-content-desc2">- Validation rules to consistently produce reliable slides. (e.g. check if there are content overflow)</p><p class="projects__row-content-desc2">These are some example slides during development. These are not part of the final product.</p>
-              <div class="project-details__main-content-block">
+              <ul class="project-details__desc-list">
+                <li>Custom compliance data is used as the source input for slide generation.</li>
+                <li>Agentic workflow that dynamically decides the layout, slide order, and image placement based on data content.</li>
+                <li>Validation rules to consistently produce reliable slides (e.g. detecting content overflow).</li>
+              </ul>
+            </div>
+
+            <!-- Example slides -->
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Example Slides</h3>
+              <p class="projects__row-content-desc2" style="margin-bottom: 1.5rem;">
+                These are example slides generated during development and are <em>not</em> part of the final product.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 2rem;">
                 <div class="project-details__showcase-img-cont3">
                   <img
                     src="./assets/jpeg/project-1769875181183-870489118.png"
-                    alt="Project Image"
+                    alt="Example slide 1"
                     class="project-details__showcase-img"
                   />
-                </div></div><div class="project-details__main-content-block">
+                </div>
                 <div class="project-details__showcase-img-cont3">
                   <img
                     src="./assets/jpeg/project-1769875224032-52141928.png"
-                    alt="Project Image"
+                    alt="Example slide 2"
                     class="project-details__showcase-img"
                   />
-                </div></div><div class="project-details__main-content-block">
+                </div>
                 <div class="project-details__showcase-img-cont3">
                   <img
                     src="./assets/jpeg/project-1769875230721-227269043.png"
-                    alt="Project Image"
+                    alt="Example slide 3"
                     class="project-details__showcase-img"
                   />
-                </div></div>
-              
+                </div>
+              </div>
             </div>
-            
-            
+
+            <!-- Key Contributions -->
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Key Contributions</h3>
               <ul class="project-details__desc-list">
-                <li><strong>Developed</strong> a robust data pipeline using <strong>pandas</strong>, incorporating comprehensive data validation checks and automated artifact generation to support client expected <strong>PPTX</strong> slide creation.</li>
+                <li><strong>Developed</strong> a robust data pipeline using <strong>pandas</strong>, incorporating comprehensive data validation checks and automated artifact generation to support client-expected <strong>PPTX</strong> slide creation.</li>
                 <li><strong>Designed</strong> and <strong>implemented</strong> an <strong>AI-driven pipeline</strong> leveraging <strong>LLM APIs</strong> and the <strong>Strands Agents Framework</strong> to automatically extract, analyze, and summarize compliance data for efficient PowerPoint slide generation.</li>
                 <li><strong>Ensured</strong> consistent and reliable PowerPoint slide output by utilizing structured data models with <strong>Pydantic</strong> and implementing validation scripts within the <strong>html2pptx</strong> workflow, integrating <strong>pptxgenjs</strong>, <strong>Playwright</strong>, and <strong>Sharp</strong>.</li>
                 <li><strong>Developed</strong> a Human-in-the-Loop (<strong>HITL</strong>) workflow, enabling compliance managers to conveniently edit <strong>PPTX</strong> files through prompt-based interactions when manual adjustments are required.</li>
                 <li><strong>Conducted</strong> comprehensive evaluation and observability of <strong>LLM</strong> outputs using <strong>LLM-as-a-judge</strong> methodology and integrated monitoring with <strong>Langfuse</strong>.</li>
               </ul>
             </div>
-            
-            
+
+            <!-- Skills & Tools -->
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Skills and Tools Used</h3>
               <div class="skills">
@@ -147,11 +173,12 @@
                 <div class="skills__skill">HITL</div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
     </section>
+
     <script src="./index.js"></script>
   </body>
 </html>
