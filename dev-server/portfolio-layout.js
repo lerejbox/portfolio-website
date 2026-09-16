@@ -5,25 +5,16 @@ const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({
 
 const header = `<header class="site-header">
   <div class="main-container site-header__inner">
-    <a class="site-name" href="./index.html">Jerel Ong<span aria-hidden="true">.</span></a>
+    <a class="site-name" href="./index.html"><img class="site-avatar" src="./assets/png/jobx.png" alt="" width="48" height="48" /><span>Jerel Ong</span></a>
     <nav class="site-nav" aria-label="Main navigation">
       <a href="./index.html#about">About</a>
       <a href="./index.html#projects">Work</a>
       <a href="./index.html#personal-projects">Projects</a>
-      <a href="./index.html#contact">Links</a>
+      <a class="social-link" href="https://www.linkedin.com/in/jerelong" aria-label="LinkedIn" title="LinkedIn"><img src="./assets/png/linkedin-ico.png" alt="" width="22" height="22" /></a>
+      <a class="social-link" href="https://github.com/lerejbox" aria-label="GitHub" title="GitHub"><img src="./assets/png/github-ico.png" alt="" width="22" height="22" /></a>
     </nav>
   </div>
 </header>`;
-
-const footer = `<footer id="contact" class="site-footer">
-  <div class="main-container site-footer__inner">
-    <span>Jerel Ong</span>
-    <nav aria-label="Profile links">
-      <a href="https://github.com/lerejbox">GitHub</a>
-      <a href="https://www.linkedin.com/in/jerelong">LinkedIn</a>
-    </nav>
-  </div>
-</footer>`;
 
 function renderProjects(projects, details = []) {
   const cards = projects.map((project, index) => {
@@ -56,4 +47,4 @@ function renderProjects(projects, details = []) {
 </section>`;
 }
 
-module.exports = { header, footer, renderProjects };
+module.exports = { header, renderProjects };

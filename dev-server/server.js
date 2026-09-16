@@ -4,7 +4,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const multer = require('multer');
 const OpenAI = require('openai');
-const { header, footer, renderProjects } = require('./portfolio-layout');
+const { header, renderProjects } = require('./portfolio-layout');
 
 const app = express();
 const PORT = 3000;
@@ -400,7 +400,6 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
         </div>
       </div>
     </main>
-    ${footer}
   </body>
 </html>`;
 }
@@ -491,7 +490,7 @@ async function generateIndexHtml() {
   const data = await loadProjects();
   const detailData = await loadProjectDetails();
   const indexContent = await fs.readFile(INDEX_FILE, 'utf8');
-  // Explicit bounds preserve the introduction, technical stack and profile links.
+  // Explicit bounds preserve the introduction and technical stack.
   const startMarker = '<!-- projects:start -->';
   const endMarker = '<!-- projects:end -->';
   const start = indexContent.indexOf(startMarker);

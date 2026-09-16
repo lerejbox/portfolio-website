@@ -16,16 +16,18 @@ body { background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-
 .site-header { background: var(--navy); border-bottom: 1px solid #263154; }
 .site-header__inner { min-height: 8.8rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .site-name { color: #f4f6fa; font-size: 2rem; font-weight: 650; letter-spacing: -.06rem; white-space: nowrap; }
-.site-name span { margin-left: .15rem; }
-.site-nav, .site-footer nav { display: flex; gap: 3rem; }
-.site-nav a, .site-footer a { font-size: 1.4rem; color: #d4dbea; }
-.site-nav a:hover, .site-footer a:hover { color: #fff; text-decoration: underline; text-underline-offset: .5rem; }
+.site-name { display: inline-flex; align-items: center; gap: 1.2rem; }
+.site-avatar { display: block; width: 4.8rem; height: 4.8rem; border-radius: 50%; object-fit: cover; border: 2px solid #d4dbea; flex-shrink: 0; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; width: 4.4rem; height: 4.4rem; border-radius: 50%; }
+.social-link img { display: block; width: 2.2rem; height: 2.2rem; }
+.social-link:hover { background: #ffffff14; }
+.site-nav { display: flex; align-items: center; gap: 2rem; }
+.site-nav a { font-size: 1.4rem; color: #d4dbea; }
+.site-nav a:hover { color: #fff; text-decoration: underline; text-underline-offset: .5rem; }
 .portfolio-intro { padding: 6rem 0; margin-bottom: 4.5rem; background: var(--sage); border-bottom: 1px solid #d2ded6; }
-.portfolio-intro__layout { display: grid; grid-template-columns: minmax(0, 1fr) 24rem; align-items: center; gap: 8rem; }
+.portfolio-intro__layout { display: block; }
 .portfolio-intro__copy { max-width: 72rem; }
 .portfolio-intro h1 { color: var(--navy); font-size: clamp(3.6rem, 4.5vw, 5rem); line-height: 1.12; letter-spacing: -.045em; font-weight: 600; margin-bottom: 2.4rem; }
-.profile-photo { width: 100%; margin: 0; padding: .7rem; background: #f8faf7; border: 1px solid #d2ded6; border-radius: 1.8rem; box-shadow: 0 1rem 2.5rem #101a440d; }
-.profile-photo img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 1.2rem; }
 .sec-pad { padding: 0 0 7rem; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; padding: 2rem 0; border-top: 1px solid var(--line); }
 .section-heading h2 { font-size: 2rem; font-weight: 600; letter-spacing: -.035rem; }
@@ -59,8 +61,6 @@ body { background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-
 .skill-group { display: grid; grid-template-columns: 13rem 1fr; gap: 1.5rem; padding: 1.3rem 0; border-top: 1px solid var(--line); }
 .skill-group h3 { font-size: 1.3rem; font-weight: 600; color: var(--navy); }
 .skill-group p { color: var(--muted); font-size: 1.35rem; line-height: 1.8; }
-.site-footer { border-top: 1px solid #263154; background: var(--navy); }
-.site-footer__inner { display: flex; justify-content: space-between; gap: 2rem; padding: 2.8rem 0; color: #d4dbea; font-size: 1.3rem; }
 .project-details__content { max-width: 90rem; padding: 4rem 0 7rem; }
 .project-back { display: inline-block; font-size: 1.35rem; color: var(--muted); margin-bottom: 3.5rem; }
 .project-back:hover { color: var(--navy); text-decoration: underline; }
@@ -89,18 +89,16 @@ body { background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-
   .project-card__body { padding: 2.4rem; }
   .project-card__image { padding: 2rem; }
   .other-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .portfolio-intro__layout { grid-template-columns: minmax(0, 1fr) 19rem; gap: 4rem; }
   .technical-stack__groups { column-gap: 3rem; }
 }
 @media (max-width: 600px) {
   .main-container { width: calc(100% - 3.6rem); }
   .site-header__inner { min-height: 7rem; gap: 1rem; flex-wrap: wrap; padding: 1.5rem 0; }
   .site-name { font-size: 1.7rem; }
-  .site-nav, .site-footer nav { gap: 1.2rem; }
+  .site-nav { gap: 1.2rem; width: 100%; justify-content: space-between; }
+  .site-avatar { width: 4rem; height: 4rem; }
   .site-nav a { font-size: 1.3rem; }
   .portfolio-intro { padding: 3rem 0 3.5rem; margin-bottom: 3rem; }
-  .portfolio-intro__layout { grid-template-columns: 1fr; gap: 2.4rem; }
-  .profile-photo { width: 13rem; grid-row: 1; }
   .portfolio-intro h1 { margin-bottom: 1.8rem; }
   .technical-stack__groups { grid-template-columns: 1fr; }
   .project-card--selected, .other-projects { grid-template-columns: 1fr; }

@@ -23,12 +23,13 @@ Netlify hosting and build settings can stay as they are.
 
 - `css/portfolio.css` contains the shared portfolio layout and responsive styles.
   It loads after the generated `css/style.css`, so Sass compilation preserves it.
-- `dev-server/portfolio-layout.js` provides the shared navigation, profile links,
+- `dev-server/portfolio-layout.js` provides the shared navigation, profile icons,
   and project cards used by the editor. The first three projects in the editor's
   order appear under Work experiences; the remainder appear under Personal projects.
-- The homepage opens with the existing About text and profile photo. The technical
+- The header pairs a circular profile photo with the name and provides LinkedIn
+  and GitHub icon links. There is no footer. The homepage opens with About. The technical
   stack follows the project sections. Navigation links follow that reading order.
 - Cards retain full project descriptions and use existing detail metadata and
   skills. Update content through the editor as before.
 - Keep the `projects:start` and `projects:end` comments in `index.html`; they bound
-  the area replaced by project regeneration, preserving About and profile links.
+  the area replaced by project regeneration, preserving About and the technical stack.
