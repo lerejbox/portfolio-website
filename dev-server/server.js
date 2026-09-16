@@ -491,7 +491,7 @@ async function generateIndexHtml() {
   const data = await loadProjects();
   const detailData = await loadProjectDetails();
   const indexContent = await fs.readFile(INDEX_FILE, 'utf8');
-  // Explicit bounds preserve About and profile links after the projects section.
+  // Explicit bounds preserve the introduction, technical stack and profile links.
   const startMarker = '<!-- projects:start -->';
   const endMarker = '<!-- projects:end -->';
   const start = indexContent.indexOf(startMarker);
@@ -2928,4 +2928,3 @@ async function init() {
 }
 
 init();
-

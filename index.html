@@ -15,22 +15,40 @@
   <div class="main-container site-header__inner">
     <a class="site-name" href="./index.html">Jerel Ong<span aria-hidden="true">.</span></a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="./index.html#projects">Projects</a>
       <a href="./index.html#about">About</a>
+      <a href="./index.html#projects">Work</a>
+      <a href="./index.html#personal-projects">Projects</a>
       <a href="./index.html#contact">Links</a>
     </nav>
   </div>
 </header>
     <main>
-      <section class="portfolio-intro main-container" aria-labelledby="portfolio-title">
-        <p class="portfolio-intro__label">Technical portfolio</p>
-        <h1 id="portfolio-title">Jerel Ong</h1>
-        <p class="portfolio-intro__subtitle">Projects &amp; experience</p>
+      <section id="about" class="portfolio-intro" aria-labelledby="about-title">
+        <div class="main-container portfolio-intro__layout">
+          <div class="portfolio-intro__copy">
+            <h1 id="about-title">About me</h1>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+              I graduated from SUTD (Singapore University of Technology and Design) with a degree in Computer Science and Design,
+              and am a graduate of the AI Singapore Apprenticeship Programme (AIAP) Batch 20.
+              I've got a strong interest in today's AI technologies, which led me to take up AI-focused courses and
+              build real-world AI applications and solutions.
+              </p>
+              <p class="about__content-details-para">
+              I'm also someone who's open to new and unfamiliar environments, and I'm always looking for ways to grow
+              and keep improving in any way, not only in tech.
+              </p>
+            </div>
+          </div>
+          <figure class="profile-photo">
+            <img src="./assets/png/jobx.png" alt="Jerel Ong" width="400" height="400" decoding="async" />
+          </figure>
+        </div>
       </section>
       <!-- projects:start -->
       <section id="projects" class="projects sec-pad">
   <div class="main-container">
-    <div class="section-heading"><h2>Selected projects</h2><span>01 — 03</span></div>
+    <div class="section-heading"><h2>Work experiences</h2><span>01 — 03</span></div>
     <div class="selected-projects"><article class="project-card project-card--selected">
       <a class="project-card__image" href="./project-6.html" tabindex="-1" aria-hidden="true">
         <img src="./assets/jpeg/aisg_logo.jpg" alt="" loading="lazy" />
@@ -65,7 +83,8 @@
         <ul class="project-tags" aria-label="Technologies"><li>Python</li><li>Flask</li><li>VertexAI</li><li>Google Cloud Platform</li></ul>
       </div>
     </article></div>
-    <div class="section-heading section-heading--other"><h2>Other projects</h2><span>04 — 06</span></div>
+    <div id="personal-projects" class="section-heading section-heading--other"><h2>Personal projects</h2><span>04 — 06</span></div>
+    
     <div class="other-projects"><article class="project-card">
       <a class="project-card__image" href="./project-5.html" tabindex="-1" aria-hidden="true">
         <img src="./assets/svg/research.svg" alt="" loading="lazy" />
@@ -102,31 +121,14 @@
   </div>
 </section>
       <!-- projects:end -->
-      <section id="about" class="about sec-pad">
+      <section id="skills" class="technical-stack sec-pad" aria-labelledby="skills-title">
         <div class="main-container">
-          <div class="section-heading"><h2>About</h2></div>
-          <div class="about__content">
-            <div class="about__content-main">
-              <div class="about__content-details">
-              <p class="about__content-details-para">
-              I graduated from SUTD (Singapore University of Technology and Design) with a degree in Computer Science and Design,
-              and am a graduate of the AI Singapore Apprenticeship Programme (AIAP) Batch 20.
-              I've got a strong interest in today's AI technologies, which led me to take up AI-focused courses and
-              build real-world AI applications and solutions.
-              </p>
-              <p class="about__content-details-para">
-              I'm also someone who's open to new and unfamiliar environments, and I'm always looking for ways to grow
-              and keep improving in any way, not only in tech.
-              </p>
-            </div>
-            </div>
-            <div class="about__content-skills">
-              <h3 class="about__content-title">Technical stack</h3>
-              <div class="skill-group"><h4>AI / ML</h4><p>TensorFlow · PyTorch · HugginFace</p></div>
-              <div class="skill-group"><h4>Backend</h4><p>Python · Java · Flask · Django · FastAPI · Node.js</p></div>
-              <div class="skill-group"><h4>Frontend</h4><p>HTML · CSS · JavaScript · TypeScript · React</p></div>
-              <div class="skill-group"><h4>Data / Tools</h4><p>MongoDB · PostgreSQL · Docker · GIT · Postman</p></div>
-            </div>
+          <div class="section-heading"><h2 id="skills-title">Technical stack</h2></div>
+          <div class="technical-stack__groups">
+            <div class="skill-group"><h3>AI / ML</h3><p>TensorFlow · PyTorch · HugginFace</p></div>
+            <div class="skill-group"><h3>Backend</h3><p>Python · Java · Flask · Django · FastAPI · Node.js</p></div>
+            <div class="skill-group"><h3>Frontend</h3><p>HTML · CSS · JavaScript · TypeScript · React</p></div>
+            <div class="skill-group"><h3>Data / Tools</h3><p>MongoDB · PostgreSQL · Docker · GIT · Postman</p></div>
           </div>
         </div>
       </section>

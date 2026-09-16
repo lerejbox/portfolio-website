@@ -7,8 +7,9 @@ const header = `<header class="site-header">
   <div class="main-container site-header__inner">
     <a class="site-name" href="./index.html">Jerel Ong<span aria-hidden="true">.</span></a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="./index.html#projects">Projects</a>
       <a href="./index.html#about">About</a>
+      <a href="./index.html#projects">Work</a>
+      <a href="./index.html#personal-projects">Projects</a>
       <a href="./index.html#contact">Links</a>
     </nav>
   </div>
@@ -46,9 +47,10 @@ function renderProjects(projects, details = []) {
   });
   return `<section id="projects" class="projects sec-pad">
   <div class="main-container">
-    <div class="section-heading"><h2>Selected projects</h2><span>01 — ${String(Math.min(projects.length, 3)).padStart(2, '0')}</span></div>
+    <div class="section-heading"><h2>Work experiences</h2><span>01 — ${String(Math.min(projects.length, 3)).padStart(2, '0')}</span></div>
     <div class="selected-projects">${cards.slice(0, 3).join('\n')}</div>
-    ${cards.length > 3 ? `<div class="section-heading section-heading--other"><h2>Other projects</h2><span>04 — ${String(cards.length).padStart(2, '0')}</span></div>
+    <div id="personal-projects" class="section-heading section-heading--other"><h2>Personal projects</h2>${cards.length > 3 ? `<span>04 — ${String(cards.length).padStart(2, '0')}</span>` : ''}</div>
+    ${cards.length > 3 ? `
     <div class="other-projects">${cards.slice(3).join('\n')}</div>` : ''}
   </div>
 </section>`;
