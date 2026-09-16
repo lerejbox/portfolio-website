@@ -8,75 +8,29 @@
     <meta name="description" content="Case study page of Project" />
 
     <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/portfolio.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/jobx.png"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Jerel Ong</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="project-details">
+    <header class="site-header">
+  <div class="main-container site-header__inner">
+    <a class="site-name" href="./index.html">Jerel Ong<span aria-hidden="true">.</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="./index.html#projects">Projects</a>
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#contact">Links</a>
+    </nav>
+  </div>
+</header>
+    <main class="project-details">
       <div class="main-container">
         <div class="project-details__content">
+          <a class="project-back" href="./index.html#projects">← Projects</a>
+          <div class="project-details__desc">
+              <h1 class="project-details__content-title--big">Video Captioning in Military Scenarios</h1>
+              <p class="project-details__desc-para">
+                <strong>Role:</strong> AI Engineer<br><strong>Company:</strong> ST Engineering<br><strong>Project Date:</strong> Sept 2024 – May 2025
+              </p>
+            </div>
           <div class="project-details__showcase-img-cont">
             <img
               src="./assets/jpeg/deepsub.jpeg"
@@ -85,19 +39,14 @@
             />
           </div>
           <div class="project-details__content-main">
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title--big">Video Captioning in Military Scenarios</h3>
-              <p class="project-details__desc-para">
-                <strong>Role:</strong> AI Engineer<br><strong>Company:</strong> ST Engineering<br><strong>Project Date:</strong> Sept 2024 – May 2025
-              </p>
-            </div>
+            
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Project Overview</h3>
+              <h2 class="project-details__content-title">Project Overview</h2>
               <p class="projects__row-content-desc2">Our team was tasked to develop a video captioning system that can <strong>generate captions for military scenarios.</strong> The system should be able generate <strong>detailed captions</strong> that describe the <strong>actions and events</strong> taking place in the video.</p><p class="projects__row-content-desc2">The system should also be able to generate captions that are relevant to the military context, such as identifying specific objects, actions, and events that are relevant to military operations. We were also tasked to ensure that the system is able to generate captions in <strong>real-time</strong>, so that it can be used in live military operations.</p><p class="projects__row-content-desc2">We named our final model <strong>DeepSub</strong>, a fine-tuned vision transformer model with <strong>InternVL2</strong> as the base open source model. With our evaluation, our new model has achieved about <strong>4x improvement</strong> in <strong>military object specificity</strong> when generating captions.</p>
             </div>
             
             <div class="project-details__tools-used project-details__main-content">
-              <h3 class="project-details__content-title">Highlights</h3>
+              <h2 class="project-details__content-title">Highlights</h2>
               
               <div class="project-details__main-content-block">
                 <div class="project-details__showcase-img-cont3">
@@ -133,7 +82,7 @@
             
             
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Key Contributions</h3>
+              <h2 class="project-details__content-title">Key Contributions</h2>
               <ul class="project-details__desc-list">
                 <li><strong>Research:</strong> Conducted research on different architectures like CNNs, LSTMs and Transformers which eventually lead to the final decision of fine-tuning an open source vision transformer model.</li>
                 <li><strong>Dataset Curation:</strong> Filtered and processed a large-scale video dataset, using open-source multimodal embeddings to identify and extract domain-relevant content, complemented with human evaluation to ensure quality and relevance.</li>
@@ -144,7 +93,7 @@
             
             
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Skills and Tools Used</h3>
+              <h2 class="project-details__content-title">Skills and Tools Used</h2>
               <div class="skills">
                 <div class="skills__skill">GIT</div>
                 <div class="skills__skill">Python</div>
@@ -157,7 +106,7 @@
             </div>
             
             <div class="project-details__links">
-              <h3 class="project-details__content-title">Project Links</h3>
+              <h2 class="project-details__content-title">Project Links</h2>
               
               <a
                 href="https://capstoneshowcase.sutd.edu.sg/project/proj-15-stengineering-combat-ready-vision-ai/"
@@ -169,7 +118,15 @@
           </div>
         </div>
       </div>
-    </section>
-    <script src="./index.js"></script>
+    </main>
+    <footer id="contact" class="site-footer">
+  <div class="main-container site-footer__inner">
+    <span>Jerel Ong</span>
+    <nav aria-label="Profile links">
+      <a href="https://github.com/lerejbox">GitHub</a>
+      <a href="https://www.linkedin.com/in/jerelong">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
   </body>
 </html>
