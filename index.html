@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,117 +7,32 @@
     <title>Portfolio</title>
     <meta name="description" content="Portfolio Template for Developer" />
 
+    <script src="./theme.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/portfolio.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/jobx.png"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Jerel Ong</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-        <h1 class="heading-primary">Welcome</h1>
-        <div class="home-hero__info">
-          <p class="text-primary">
-            This website is my technical portolio, where I showcase my projects and skills.
-          </p>
-        </div>
-        <div class="home-hero__cta">
-          <a href="./#projects" class="btn btn--bg">Projects</a>
-        </div>
-      </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="https://www.linkedin.com/in/jerelong" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="LinkedIn icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://github.com/lerejbox" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/github-ico.png"
-              alt="GitHub Icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
-    </section>
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">About Me</h3>
+    <header class="site-header">
+  <div class="main-container site-header__inner">
+    <a class="site-name" href="./index.html"><img class="site-avatar" src="./assets/png/jobx.png" alt="" width="48" height="48" /><span>Jerel Ong</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#projects">Work</a>
+      <a href="./index.html#personal-projects">Projects</a>
+      <a class="social-link" href="https://www.linkedin.com/in/jerelong" aria-label="LinkedIn" title="LinkedIn"><img src="./assets/png/linkedin-ico.png" alt="" width="22" height="22" /></a>
+      <a class="social-link" href="https://github.com/lerejbox" aria-label="GitHub" title="GitHub"><img src="./assets/png/github-ico.png" alt="" width="22" height="22" /></a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme" hidden>
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+    <main>
+      <section id="about" class="portfolio-intro" aria-labelledby="about-title">
+        <div class="main-container portfolio-intro__layout">
+          <div class="portfolio-intro__copy">
+            <h1 id="about-title">About me</h1>
             <div class="about__content-details">
               <p class="about__content-details-para">
               I graduated from SUTD (Singapore University of Technology and Design) with a degree in Computer Science and Design,
@@ -131,161 +46,100 @@
               </p>
             </div>
           </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">Docker</div>
-              <div class="skills__skill">GIT</div>
-              <div class="skills__skill">Postman</div>
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">TypeScript</div>
-              <div class="skills__skill">Flask</div>
-              <div class="skills__skill">Django</div>
-              <div class="skills__skill">FastAPI</div>
-              <div class="skills__skill">MongoDB</div>
-              <div class="skills__skill">Node.js</div>
-              <div class="skills__skill">PostgreSQL</div>
-              <div class="skills__skill">TensorFlow</div>
-              <div class="skills__skill">PyTorch</div>
-              <div class="skills__skill">HugginFace</div>
-            </div>
-          </div>
         </div>
+      </section>
+      <!-- projects:start -->
+      <section id="projects" class="projects sec-pad">
+  <div class="main-container">
+    <div class="section-heading"><h2>Work experiences</h2></div>
+    <div class="selected-projects"><article class="project-card project-card--selected">
+      <a class="project-card__image" href="./project-6.html" tabindex="-1" aria-hidden="true">
+        <img src="./assets/jpeg/aisg_logo.jpg" alt="" loading="lazy" />
+      </a>
+      <div class="project-card__body">
+        <p class="project-card__meta">AI Singapore <span aria-hidden="true">/</span> Sept 2025 to March 2026</p>
+        
+        <h3><a href="./project-6.html">PowerPoint Slides Compliance Report Generation with AI<span class="project-card__arrow" aria-hidden="true">↗</span></a></h3>
+        <div class="project-card__description"><p><strong>An AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs.</strong></p><p>The solution applies robust software engineering practices and large language models (LLMs) to analyze user-provided data and transform it into structured, client-compliant presentations. In addition, a human-in-the-loop (HITL) workflow was implemented, enabling compliance managers to refine and edit the generated PPTX through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.</p></div>
+        <ul class="project-tags" aria-label="Technologies"><li>Python</li><li>LLMs</li><li>PowerPoint Automation</li><li>Software Engineering</li></ul>
       </div>
-    </section>
-                                                                                                                                        <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-        </h2>
-        <div class="projects__row projects__row--center-img">
-          <div class="projects__row-img-cont">
-            <img
-              src="./assets/jpeg/aisg_logo.jpg"
-              alt="PowerPoint Slides Compliance Report Generation with AI"
-              class="projects__row-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">PowerPoint Slides Compliance Report Generation with AI</h3>
-            <div class="projects__row-content-desc"><p><strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations. In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.</p>
-</div>
-            <a
-              href="./project-6.html"
-              class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank"
-              >More Details</a
-            >
-          </div>
-        </div>
-        <div class="projects__row projects__row--center-img">
-          <div class="projects__row-img-cont">
-            <img
-              src="./assets/jpeg/deepsub.jpeg"
-              alt="Video Captioning in Military Scenarios"
-              class="projects__row-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Video Captioning in Military Scenarios</h3>
-            <p class="projects__row-content-desc">Our team was tasked to develop a video captioning system that can <strong>generate captions for military scenarios.</strong> The system should be able generate <strong>detailed captions</strong> that describe the <strong>actions and events</strong> taking place in the video. The system should also be able to generate captions that are relevant to the military context, such as identifying specific objects, actions, and events that are relevant to military operations. We were also tasked to ensure that the system is able to generate captions in <strong>real-time</strong>, so that it can be used in live military operations. We named our final model <strong>DeepSub</strong>, a fine-tuned vision transformer model with <strong>InternVL2</strong> as the base open source model. With our evaluation, our new model has achieved about <strong>4x improvement</strong> in <strong>military object specificity</strong> when generating captions.</p>
-            <a
-              href="./project-1.html"
-              class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank"
-              >More Details</a
-            >
-          </div>
-        </div>
-        <div class="projects__row projects__row--center-img">
-          <div class="projects__row-img-cont">
-            <img
-              src="./assets/png/interfaith.png"
-              alt="Streamlining Religious Diversity Training with an AI Webapp"
-              class="projects__row-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Streamlining Religious Diversity Training with an AI Webapp</h3>
-            <p class="projects__row-content-desc2">Our team partnered with a client promoting interfaith, interracial, and intercultural education to support trainers facing burnout from answering repetitive, sensitive questions. We developed an <strong>AI-powered web app</strong> that combines a <strong>curated FAQ system</strong> with a <strong>real-time chatbot</strong>, designed to <strong>handle complex topics</strong> respectfully and in line with the client's values.</p><p class="projects__row-content-desc">The platform supports <strong>session-based customization</strong>, letting trainers tailor content and control access. A <strong>human-in-the-loop feedback system</strong> allows flagged responses to be reviewed and reused for few-shot training, enabling continuous improvement of the chatbot over time.</p>
-            <a
-              href="./project-2.html"
-              class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank"
-              >More Details</a
-            >
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img
-              src="./assets/svg/research.svg"
-              alt="AI-Powered Research Assistant"
-              class="projects__row-img"
-              loading="lazy" style="width: 300px; height: auto; display: block; margin: auto;"
-            />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">AI-Powered Research Assistant</h3>
-            <p class="projects__row-content-desc">Ask anything about the provided document(s) with specific references within the document(s). Webiste Links supported.</p>
-            <a
-              href="./project-5.html"
-              class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank"
-              >More Details</a
-            >
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img
-              src="./assets/png/ai-notes-icon-512x512.png"
-              alt="AI-Powered Documentation & Learning Assistant"
-              class="projects__row-img"
-              loading="lazy" style="width: 300px; height: auto; display: block; margin: auto;"
-            />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">AI-Powered Documentation & Learning Assistant</h3>
-            <p class="projects__row-content-desc">A custom-built AI chatbot interface designed to enhance the documentation and learning experience. This project integrates features such as folder management, search, colored-tag filtering, and a prompt library system to streamline user workflows.</p>
-            <a
-              href="./project-4.html"
-              class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank"
-              >More Details</a
-            >
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img
-              src="./assets/jpeg/bitcoin.jpg"
-              alt="Bitcoin Predictor"
-              class="projects__row-img"
-              loading="lazy"
-            />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Bitcoin Predictor</h3>
-            <p class="projects__row-content-desc">Designed and implemented an LSTM-based deep learning model in PyTorch to predict the next-day closing price of Bitcoin. The model uses 10+ years of historical data with engineered time-based features like day of the week and month. Achieved a test MAPE of ~2.48% and RMSE of ~$2519.98, demonstrating solid short-term forecasting capability for financial time series.</p>
-            <a
-              href="./project-3.html"
-              class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank"
-              >More Details</a
-            >
-          </div>
-        </div>
+    </article>
+<article class="project-card project-card--selected">
+      <a class="project-card__image" href="./project-1.html" tabindex="-1" aria-hidden="true">
+        <img src="./assets/jpeg/deepsub.jpeg" alt="" loading="lazy" />
+      </a>
+      <div class="project-card__body">
+        <p class="project-card__meta">ST Engineering <span aria-hidden="true">/</span> Sept 2024 – May 2025</p>
+        
+        <h3><a href="./project-1.html">Video Captioning in Military Scenarios<span class="project-card__arrow" aria-hidden="true">↗</span></a></h3>
+        <div class="project-card__description"><p><strong>A video captioning system that generates detailed captions for military scenarios.</strong></p><p>The system should be able to generate detailed captions that describe the actions and events taking place in the video. The system should also be able to generate captions that are relevant to the military context, such as identifying specific objects, actions, and events that are relevant to military operations. We were also tasked to ensure that the system is able to generate captions in real-time, so that it can be used in live military operations.</p><p>We named our final model DeepSub, a fine-tuned vision transformer model with InternVL2 as the base open source model. With our evaluation, our new model has achieved about 4x improvement in military object specificity when generating captions.</p></div>
+        <ul class="project-tags" aria-label="Technologies"><li>Python</li><li>Tensorflow</li><li>Pytorch</li><li>Huggingface</li></ul>
       </div>
-    </section>
-  <script src="./index.js"></script>
-</body>
+    </article>
+<article class="project-card project-card--selected">
+      <a class="project-card__image" href="./project-2.html" tabindex="-1" aria-hidden="true">
+        <img src="./assets/png/interfaith.png" alt="" loading="lazy" />
+      </a>
+      <div class="project-card__body">
+        <p class="project-card__meta">Being Bridges <span aria-hidden="true">/</span> May 2023 – Aug 2023</p>
+        
+        <h3><a href="./project-2.html">Streamlining Religious Diversity Training with an AI Webapp<span class="project-card__arrow" aria-hidden="true">↗</span></a></h3>
+        <div class="project-card__description"><p><strong>An AI-powered web app that combines a curated FAQ system with a real-time chatbot, designed to handle complex topics respectfully and in line with the client's values.</strong></p><p>Our team partnered with a client promoting interfaith, interracial, and intercultural education to support trainers facing burnout from answering repetitive, sensitive questions. We developed an AI-powered web app that combines a curated FAQ system with a real-time chatbot, designed to handle complex topics respectfully and in line with the client's values.The platform supports session-based customization, letting trainers tailor content and control access. A human-in-the-loop feedback system allows flagged responses to be reviewed and reused for few-shot training, enabling continuous improvement of the chatbot over time.</p></div>
+        <ul class="project-tags" aria-label="Technologies"><li>Python</li><li>Flask</li><li>VertexAI</li><li>Google Cloud Platform</li></ul>
+      </div>
+    </article></div>
+    <div id="personal-projects" class="section-heading section-heading--other"><h2>Personal projects</h2></div>
+    
+    <div class="other-projects"><article class="project-card">
+      <a class="project-card__image" href="./project-5.html" tabindex="-1" aria-hidden="true">
+        <img src="./assets/svg/research.svg" alt="" loading="lazy" />
+      </a>
+      <div class="project-card__body">
+        <p class="project-card__meta">Personal Project <span aria-hidden="true">/</span> Started Dec 2025</p>
+        <p class="project-status"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="5" rx="1"/><path d="M5 8v12h14V8M10 12h4"/></svg><span>No longer maintained</span></p>
+        <h3><a href="./project-5.html">AI-Powered Research Assistant<span class="project-card__arrow" aria-hidden="true">↗</span></a></h3>
+        <div class="project-card__description"><p><strong>A custom-built AI chatbot interface designed to do research about a given document or set of documents.</strong></p><p>Ask anything about the provided document(s) with specific references within the document(s). Website Links supported.</p></div>
+        <ul class="project-tags" aria-label="Technologies"><li>RAG</li><li>Python</li><li>Agents</li></ul>
+      </div>
+    </article>
+<article class="project-card">
+      <a class="project-card__image" href="./project-4.html" tabindex="-1" aria-hidden="true">
+        <img src="./assets/png/ai-notes-icon-512x512.png" alt="" loading="lazy" />
+      </a>
+      <div class="project-card__body">
+        <p class="project-card__meta">SUTD Undergraduate Research Opportunities Project (UROP) <span aria-hidden="true">/</span> Aug 2023 – May 2024</p>
+        <p class="project-status"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="5" rx="1"/><path d="M5 8v12h14V8M10 12h4"/></svg><span>No longer maintained</span></p>
+        <h3><a href="./project-4.html">AI-Powered Documentation &amp; Learning Assistant<span class="project-card__arrow" aria-hidden="true">↗</span></a></h3>
+        <div class="project-card__description"><p><strong>A custom-built AI chatbot interface designed to enhance the documentation and learning experience.</strong></p><p>This project integrates features such as folder management, search, colored-tag filtering, and a prompt library system to streamline user workflows.</p></div>
+        <ul class="project-tags" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>JavaScript</li><li>CSS</li></ul>
+      </div>
+    </article>
+<article class="project-card">
+      <a class="project-card__image" href="./project-3.html" tabindex="-1" aria-hidden="true">
+        <img src="./assets/jpeg/bitcoin.jpg" alt="" loading="lazy" />
+      </a>
+      <div class="project-card__body">
+        <p class="project-card__meta">SUTD Deep Learning Project <span aria-hidden="true">/</span> Jan 2025 – May 2025</p>
+        
+        <h3><a href="./project-3.html">Bitcoin Predictor<span class="project-card__arrow" aria-hidden="true">↗</span></a></h3>
+        <div class="project-card__description"><p><strong>An LSTM-based deep learning model in PyTorch to predict the next-day closing price of Bitcoin.</strong></p><p>The model uses 10+ years of historical data with engineered time-based features like day of the week and month. Achieved a test MAPE of ~2.48% and RMSE of ~$2519.98, demonstrating solid short-term forecasting capability for financial time series.</p></div>
+        <ul class="project-tags" aria-label="Technologies"><li>Python</li><li>Jupyter</li><li>PyTorch</li></ul>
+      </div>
+    </article></div>
+  </div>
+</section>
+      <!-- projects:end -->
+      <section id="skills" class="technical-stack sec-pad" aria-labelledby="skills-title">
+        <div class="main-container">
+          <div class="section-heading"><h2 id="skills-title">Technical stack</h2></div>
+          <div class="technical-stack__groups">
+            <div class="skill-group"><h3>AI / ML</h3><p>TensorFlow · PyTorch · HugginFace</p></div>
+            <div class="skill-group"><h3>Backend</h3><p>Python · Java · Flask · Django · FastAPI · Node.js</p></div>
+            <div class="skill-group"><h3>Frontend</h3><p>HTML · CSS · JavaScript · TypeScript · React</p></div>
+            <div class="skill-group"><h3>Data / Tools</h3><p>MongoDB · PostgreSQL · Docker · GIT · Postman</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

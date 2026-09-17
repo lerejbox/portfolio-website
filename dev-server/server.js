@@ -4,6 +4,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const multer = require('multer');
 const OpenAI = require('openai');
+const { header, renderProjects } = require('./portfolio-layout');
 
 const app = express();
 const PORT = 3000;
@@ -262,7 +263,7 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
 
     mainContentHtml = `
             <div class="project-details__tools-used project-details__main-content">
-              <h3 class="project-details__content-title">${title}</h3>
+              <h2 class="project-details__content-title">${title}</h2>
               ${sectionDescriptionHtml}
               ${blocksHtml}
               ${conclusionHtml}
@@ -291,7 +292,7 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
 
     additionalImagesHtml = `
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Images</h3>
+              <h2 class="project-details__content-title">Images</h2>
               ${imagesHtml}
             </div>`;
   }
@@ -302,7 +303,7 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
     const keyContributions = detail.keyContributions.map(sanitizeListItem).filter(Boolean);
     keyContributionsHtml = `
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Key Contributions</h3>
+              <h2 class="project-details__content-title">Key Contributions</h2>
               <ul class="project-details__desc-list">
                 ${keyContributions.map(c => `<li>${c}</li>`).join('\n                ')}
               </ul>
@@ -315,7 +316,7 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
     const futureDevelopment = detail.futureDevelopment.map(sanitizeListItem).filter(Boolean);
     futureDevHtml = `
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Future Development</h3>
+              <h2 class="project-details__content-title">${(detail.overview || []).some(item => item.type === 'note' && /no longer maintained/i.test(item.content)) ? 'Previously planned features' : 'Future Development'}</h2>
               <ul class="project-details__desc-list">
                 ${futureDevelopment.map(item => `<li>${item}</li>`).join('\n                ')}
               </ul>
@@ -327,7 +328,7 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
   if (detail.skills && detail.skills.length > 0) {
     skillsHtml = `
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Skills and Tools Used</h3>
+              <h2 class="project-details__content-title">Skills and Tools Used</h2>
               <div class="skills">
                 ${detail.skills.map(skill => `<div class="skills__skill">${skill}</div>`).join('\n                ')}
               </div>
@@ -347,13 +348,13 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
 
     linksHtml = `
             <div class="project-details__links">
-              <h3 class="project-details__content-title">Project Links</h3>
+              <h2 class="project-details__content-title">Project Links</h2>
               ${linkButtons}
             </div>`;
   }
 
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -361,76 +362,22 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
     <title>More Details on ${projectTitle}</title>
     <meta name="description" content="Case study page of Project" />
 
+    <script src="./theme.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/portfolio.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/jobx.png"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Jerel Ong</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="project-details">
+    ${header}
+    <main class="project-details">
       <div class="main-container">
         <div class="project-details__content">
+          <a class="project-back" href="./index.html#projects">← Projects</a>
+          <div class="project-details__desc">
+              <h1 class="project-details__content-title--big">${projectTitle}</h1>
+              <p class="project-details__desc-para">
+                ${metaHtml}
+              </p>
+            </div>
           <div class="project-details__showcase-img-cont">
             <img
               src="${detail.heroImage || './assets/jpeg/project-placeholder.jpg'}"
@@ -439,14 +386,9 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
             />
           </div>
           <div class="project-details__content-main">
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title--big">${projectTitle}</h3>
-              <p class="project-details__desc-para">
-                ${metaHtml}
-              </p>
-            </div>
+            
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Project Overview</h3>
+              <h2 class="project-details__content-title">Project Overview</h2>
               ${overviewHtml}
             </div>
             ${mainContentHtml}
@@ -458,8 +400,7 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
           </div>
         </div>
       </div>
-    </section>
-    <script src="./index.js"></script>
+    </main>
   </body>
 </html>`;
 }
@@ -548,96 +489,21 @@ async function ensureDetailPagesExist() {
 // Generate index.html from projects
 async function generateIndexHtml() {
   const data = await loadProjects();
-  const projects = data.projects || [];
-
-  // Read the current index.html to get the template parts
-  let indexContent = await fs.readFile(INDEX_FILE, 'utf8');
-
-  // Find the projects section - need to find the proper end
-  const projectsStartMarker = '<section id="projects" class="projects sec-pad">';
-  const nextSectionStartMarker = '<script src="./index.js">';
-
-  const projectsSectionStart = indexContent.indexOf(projectsStartMarker);
-  const nextSectionStart = indexContent.indexOf(nextSectionStartMarker, projectsSectionStart);
-
-  if (projectsSectionStart === -1 || nextSectionStart === -1) {
-    console.error('Could not find projects section markers in index.html');
-    return;
+  const detailData = await loadProjectDetails();
+  const indexContent = await fs.readFile(INDEX_FILE, 'utf8');
+  // Explicit bounds preserve the introduction and technical stack.
+  const startMarker = '<!-- projects:start -->';
+  const endMarker = '<!-- projects:end -->';
+  const start = indexContent.indexOf(startMarker);
+  const end = indexContent.indexOf(endMarker, start);
+  if (start === -1 || end === -1) {
+    throw new Error('Could not find projects section markers in index.html');
   }
-
-  // Find the end of the projects section (should end with </section> before the script tag)
-  // Look backwards from nextSectionStart to find </section>
-  let projectsSectionEnd = nextSectionStart;
-  for (let i = nextSectionStart - 1; i >= projectsSectionStart; i--) {
-    if (indexContent.substring(i, i + 10) === '</section>') {
-      projectsSectionEnd = i + 10;
-      break;
-    }
-  }
-
-  // Generate projects HTML
-  const projectsHtml = projects.map((project, index) => {
-    const imageStyle = project.imageStyle ? ` style="${project.imageStyle}"` : '';
-    const centerClass = project.centerImage ? ' projects__row--center-img' : '';
-
-    // Ensure description is wrapped with the proper CSS class for consistent styling
-    let descContent;
-    if (project.description.includes('<p')) {
-      // Description has HTML <p> tags (from AI or manual HTML)
-      // Check if it already has the class
-      if (project.description.includes('class="projects__row-content-desc') ||
-        project.description.includes("class='projects__row-content-desc")) {
-        // Already has the class, use as-is
-        descContent = project.description;
-      } else {
-        // Wrap the entire HTML content in a div with the class to preserve styling
-        descContent = `<div class="projects__row-content-desc">${project.description}</div>`;
-      }
-    } else {
-      // Plain text description - wrap in <p> with class
-      descContent = `<p class="projects__row-content-desc">${project.description}</p>`;
-    }
-
-    return `        <div class="projects__row${centerClass}">
-          <div class="projects__row-img-cont">
-            <img
-              src="${project.image}"
-              alt="${project.title}"
-              class="projects__row-img"
-              loading="lazy"${imageStyle}
-            />
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">${project.title}</h3>
-            ${descContent}
-            <a
-              href="${project.detailPage}"
-              class="btn btn--med btn--theme dynamicBgClr"
-              target="_blank"
-              >More Details</a
-            >
-          </div>
-        </div>`;
-  }).join('\n');
-
-  // Build the new projects section
-  const newProjectsSection = `    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-        </h2>
-${projectsHtml}
-      </div>
-    </section>`;
-
-  // Replace the old projects section with the new one
-  const newIndexContent =
-    indexContent.substring(0, projectsSectionStart) +
-    newProjectsSection +
-    indexContent.substring(projectsSectionEnd);
-
+  const newIndexContent = indexContent.slice(0, start + startMarker.length)
+    + '\n      ' + renderProjects(data.projects || [], detailData.details || []) + '\n      '
+    + indexContent.slice(end);
   await fs.writeFile(INDEX_FILE, newIndexContent);
-  console.log('Generated index.html with', projects.length, 'projects');
+  console.log('Generated index.html with', (data.projects || []).length, 'projects');
 }
 
 // Configure multer for image uploads

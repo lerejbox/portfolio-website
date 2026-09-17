@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,75 +7,38 @@
     <title>More Details on PowerPoint Slides Compliance Report Generation with AI</title>
     <meta name="description" content="Case study page of Project" />
 
+    <script src="./theme.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/portfolio.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/jobx.png"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Jerel Ong</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <header class="site-header">
+  <div class="main-container site-header__inner">
+    <a class="site-name" href="./index.html"><img class="site-avatar" src="./assets/png/jobx.png" alt="" width="48" height="48" /><span>Jerel Ong</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#projects">Work</a>
+      <a href="./index.html#personal-projects">Projects</a>
+      <a class="social-link" href="https://www.linkedin.com/in/jerelong" aria-label="LinkedIn" title="LinkedIn"><img src="./assets/png/linkedin-ico.png" alt="" width="22" height="22" /></a>
+      <a class="social-link" href="https://github.com/lerejbox" aria-label="GitHub" title="GitHub"><img src="./assets/png/github-ico.png" alt="" width="22" height="22" /></a>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme" hidden>
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
 
-    <section class="project-details">
+    <main class="project-details">
       <div class="main-container">
         <div class="project-details__content">
+          <a class="project-back" href="./index.html#projects">← Projects</a>
+          <div class="project-details__desc">
+              <h1 class="project-details__content-title--big">PowerPoint Slides Compliance Report Generation with AI</h1>
+              <p class="project-details__desc-para">
+                <strong>Role:</strong> AI Software Engineer<br><strong>Company:</strong> AI Singapore<br><strong>Project Date:</strong> Sept 2025 to March 2026
+              </p>
+            </div>
 
           <!-- Hero image -->
           <div class="project-details__showcase-img-cont">
@@ -89,27 +52,17 @@
           <div class="project-details__content-main">
 
             <!-- Title + metadata -->
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title--big">PowerPoint Slides Compliance Report Generation with AI</h3>
-              <p class="project-details__desc-para">
-                <strong>Role:</strong> AI Software Engineer<br><strong>Company:</strong> AI Singapore<br><strong>Project Date:</strong> Sept 2025 to March 2026
-              </p>
-            </div>
+            
 
             <!-- Project Overview -->
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="projects__row-content-desc2">
-                <strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations.
-              </p>
-              <p class="projects__row-content-desc2">
-                In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.
-              </p>
+              <h2 class="project-details__content-title">Project Overview</h2>
+              <p class="projects__row-content-desc2"><strong>An AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs.</strong></p><p class="projects__row-content-desc2">The solution applies robust software engineering practices and large language models (LLMs) to analyze user-provided data and transform it into structured, client-compliant presentations. In addition, a human-in-the-loop (HITL) workflow was implemented, enabling compliance managers to refine and edit the generated PPTX through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead.</p>
             </div>
 
             <!-- Features -->
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Features</h3>
+              <h2 class="project-details__content-title">Features</h2>
               <ul class="project-details__desc-list">
                 <li>Custom compliance data is used as the source input for slide generation.</li>
                 <li>Agentic workflow that dynamically decides the layout, slide order, and image placement based on data content.</li>
@@ -119,7 +72,7 @@
 
             <!-- Example slides -->
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Example Slides</h3>
+              <h2 class="project-details__content-title">Example Slides</h2>
               <p class="projects__row-content-desc2" style="margin-bottom: 1.5rem;">
                 These are example slides generated during development and are <em>not</em> part of the final product.
               </p>
@@ -150,7 +103,7 @@
 
             <!-- Key Contributions -->
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Key Contributions</h3>
+              <h2 class="project-details__content-title">Key Contributions</h2>
               <ul class="project-details__desc-list">
                 <li><strong>Developed</strong> a robust data pipeline using <strong>pandas</strong>, incorporating comprehensive data validation checks and automated artifact generation to support client-expected <strong>PPTX</strong> slide creation.</li>
                 <li><strong>Designed</strong> and <strong>implemented</strong> an <strong>AI-driven pipeline</strong> leveraging <strong>LLM APIs</strong> and the <strong>Strands Agents Framework</strong> to automatically extract, analyze, and summarize compliance data for efficient PowerPoint slide generation.</li>
@@ -162,7 +115,7 @@
 
             <!-- Skills & Tools -->
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Skills and Tools Used</h3>
+              <h2 class="project-details__content-title">Skills and Tools Used</h2>
               <div class="skills">
                 <div class="skills__skill">Python</div>
                 <div class="skills__skill">LLMs</div>
@@ -175,8 +128,7 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <script src="./index.js"></script>
+    </main>
   </body>
 </html>
+
