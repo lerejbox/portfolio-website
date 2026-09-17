@@ -46,7 +46,7 @@ body { background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-
 .project-card__description, .project-card__description p { font-size: 1.5rem; color: var(--muted); line-height: 1.75; max-width: none; margin: 0; }
 .project-card__description p + p { margin-top: 1.2rem; }
 .project-card__description > p:first-child strong,
-.project-details__tools-used > .projects__row-content-desc2:first-of-type > strong:only-child { font-weight: 700; color: var(--ink); }
+.project-details__tools-used > .projects__row-content-desc2:first-of-type > strong:only-child { font-weight: 600; color: #46566a; }
 .project-tags { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 2rem; }
 .project-tags li { border: 1px solid #dfe5ec; background: #f0f3f7; border-radius: .5rem; color: #555b64; font-size: 1.15rem; padding: .35rem .8rem; }
 .section-heading--other { margin-top: 5rem; }
