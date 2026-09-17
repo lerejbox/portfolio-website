@@ -33,3 +33,15 @@ Netlify hosting and build settings can stay as they are.
   skills. Update content through the editor as before.
 - Keep the `projects:start` and `projects:end` comments in `index.html`; they bound
   the area replaced by project regeneration, preserving About and the technical stack.
+
+## React-inspired visual direction
+
+`design/react-inspired-portfolio` branches from the earlier design at
+`be6e069e546dbb9b3bae5428e234bb30f60ca479`. The earlier design remains on
+`design/portfolio-layout-cleanup` (PR #1) for comparison or rollback.
+
+This direction uses a charcoal/cyan palette, larger headings, a centred About
+introduction and a light/dark switch. It remains static HTML/CSS/JS.
+`theme.js` saves the chosen theme locally; dark is the default. All project
+content and maintenance statuses are retained. Manrope is hosted locally in
+`assets/fonts/`, with its SIL Open Font License included alongside the font.
