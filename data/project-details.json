@@ -216,7 +216,7 @@
         },
         {
           "type": "note",
-          "content": "I am doing this project alone, and I have not finished all the features that I want to implement for this project. It is possible that I continue to develop this project. See the future development section for more details."
+          "content": "This project is no longer maintained. Some planned features were not implemented."
         },
         {
           "type": "image",
@@ -264,7 +264,7 @@
         "role": "",
         "company": "",
         "projectType": "Personal Project",
-        "projectDate": "Dec 2025 – Present"
+        "projectDate": "Started Dec 2025"
       },
       "overview": [
         {
@@ -277,7 +277,7 @@
         },
         {
           "type": "note",
-          "content": "I am doing this project alone, it is still a proof of concept and i have yet to implement all the features. It is possible that I continue to develop this project. See the future development section for more details."
+          "content": "This project is no longer maintained. It remains a proof of concept, with some features not implemented."
         },
         {
           "type": "image",

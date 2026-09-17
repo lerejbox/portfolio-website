@@ -316,7 +316,7 @@ function generateDetailPageHtml(detail, projectTitle, detailPagePath) {
     const futureDevelopment = detail.futureDevelopment.map(sanitizeListItem).filter(Boolean);
     futureDevHtml = `
             <div class="project-details__tools-used">
-              <h2 class="project-details__content-title">Future Development</h2>
+              <h2 class="project-details__content-title">${(detail.overview || []).some(item => item.type === 'note' && /no longer maintained/i.test(item.content)) ? 'Previously planned features' : 'Future Development'}</h2>
               <ul class="project-details__desc-list">
                 ${futureDevelopment.map(item => `<li>${item}</li>`).join('\n                ')}
               </ul>
