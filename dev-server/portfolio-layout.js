@@ -22,6 +22,8 @@ function renderProjects(projects, details = []) {
     const meta = detail.meta || {};
     const context = [meta.company || meta.projectType, meta.projectDate].filter(Boolean);
     const tags = (detail.skills || []).filter(skill => skill !== 'GIT').slice(0, 4);
+    const unmaintained = (detail.overview || []).some(item =>
+      item.type === 'note' && /no longer maintained/i.test(item.content));
     const description = /<p[\s>]/i.test(project.description)
       ? project.description : `<p>${project.description}</p>`;
     return `<article class="project-card${index < 3 ? ' project-card--selected' : ''}">
@@ -30,6 +32,7 @@ function renderProjects(projects, details = []) {
       </a>
       <div class="project-card__body">
         <p class="project-card__meta">${context.map(escapeHtml).join(' <span aria-hidden="true">/</span> ')}</p>
+        ${unmaintained ? `<p class="project-status"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="5" rx="1"/><path d="M5 8v12h14V8M10 12h4"/></svg><span>No longer maintained</span></p>` : ''}
         <h3><a href="${escapeHtml(project.detailPage)}">${escapeHtml(project.title)}<span class="project-card__arrow" aria-hidden="true">↗</span></a></h3>
         <div class="project-card__description">${description}</div>
         ${tags.length ? `<ul class="project-tags" aria-label="Technologies">${tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join('')}</ul>` : ''}

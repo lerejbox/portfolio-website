@@ -30,7 +30,7 @@
     {
       "id": 5,
       "title": "AI-Powered Research Assistant",
-      "description": "<p><strong>A custom-built AI chatbot interface designed to do research about a given document or set of documents.</strong></p><p>Ask anything about the provided document(s) with specific references within the document(s). Website Links supported.</p><p>No longer maintained.</p>",
+      "description": "<p><strong>A custom-built AI chatbot interface designed to do research about a given document or set of documents.</strong></p><p>Ask anything about the provided document(s) with specific references within the document(s). Website Links supported.</p>",
       "image": "./assets/svg/research.svg",
       "imageStyle": "width: 300px; height: auto; display: block; margin: auto;",
       "detailPage": "./project-5.html",
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "title": "AI-Powered Documentation & Learning Assistant",
-      "description": "<p><strong>A custom-built AI chatbot interface designed to enhance the documentation and learning experience.</strong></p><p>This project integrates features such as folder management, search, colored-tag filtering, and a prompt library system to streamline user workflows.</p><p>No longer maintained.</p>",
+      "description": "<p><strong>A custom-built AI chatbot interface designed to enhance the documentation and learning experience.</strong></p><p>This project integrates features such as folder management, search, colored-tag filtering, and a prompt library system to streamline user workflows.</p>",
       "image": "./assets/png/ai-notes-icon-512x512.png",
       "imageStyle": "width: 300px; height: auto; display: block; margin: auto;",
       "detailPage": "./project-4.html",

@@ -39,6 +39,8 @@ body { background: var(--paper); color: var(--ink); font-family: Inter, ui-sans-
 .project-card__body { padding: 3.2rem; min-width: 0; }
 .project-card__meta { color: var(--muted); font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.3rem; }
 .project-card__meta:empty { display: none; }
+.project-status { display: inline-flex; align-items: center; gap: .6rem; max-width: 100%; margin: 0 0 1.3rem; padding: .4rem .8rem; border: 1px solid #dedbd3; border-radius: .5rem; background: #f3f1eb; color: #626056; font-size: 1.15rem; line-height: 1.5; font-weight: 500; }
+.project-status svg { flex-shrink: 0; }
 .project-card__meta span { padding: 0 .5rem; color: #9b9fa5; }
 .project-card h3 { color: var(--navy); font-size: 2.4rem; line-height: 1.3; letter-spacing: -.055rem; font-weight: 600; margin-bottom: 1.6rem; }
 .project-card h3 a:hover { text-decoration: underline; text-underline-offset: .35rem; }
