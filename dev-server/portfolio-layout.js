@@ -38,9 +38,9 @@ function renderProjects(projects, details = []) {
   });
   return `<section id="projects" class="projects sec-pad">
   <div class="main-container">
-    <div class="section-heading"><h2>Work experiences</h2><span>01 — ${String(Math.min(projects.length, 3)).padStart(2, '0')}</span></div>
+    <div class="section-heading"><h2>Work experiences</h2></div>
     <div class="selected-projects">${cards.slice(0, 3).join('\n')}</div>
-    <div id="personal-projects" class="section-heading section-heading--other"><h2>Personal projects</h2>${cards.length > 3 ? `<span>04 — ${String(cards.length).padStart(2, '0')}</span>` : ''}</div>
+    <div id="personal-projects" class="section-heading section-heading--other"><h2>Personal projects</h2></div>
     ${cards.length > 3 ? `
     <div class="other-projects">${cards.slice(3).join('\n')}</div>` : ''}
   </div>

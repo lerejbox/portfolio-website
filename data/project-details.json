@@ -6,20 +6,20 @@
       "meta": {
         "role": "AI Engineer",
         "company": "ST Engineering",
-        "projectDate": "Sept 2024 \u2013 May 2025"
+        "projectDate": "Sept 2024 – May 2025"
       },
       "overview": [
         {
           "type": "paragraph",
-          "content": "Our team was tasked to develop a video captioning system that can <strong>generate captions for military scenarios.</strong> The system should be able generate <strong>detailed captions</strong> that describe the <strong>actions and events</strong> taking place in the video."
+          "content": "<strong>A video captioning system that generates detailed captions for military scenarios.</strong>"
         },
         {
           "type": "paragraph",
-          "content": "The system should also be able to generate captions that are relevant to the military context, such as identifying specific objects, actions, and events that are relevant to military operations. We were also tasked to ensure that the system is able to generate captions in <strong>real-time</strong>, so that it can be used in live military operations."
+          "content": "The system should be able to generate detailed captions that describe the actions and events taking place in the video. The system should also be able to generate captions that are relevant to the military context, such as identifying specific objects, actions, and events that are relevant to military operations. We were also tasked to ensure that the system is able to generate captions in real-time, so that it can be used in live military operations."
         },
         {
           "type": "paragraph",
-          "content": "We named our final model <strong>DeepSub</strong>, a fine-tuned vision transformer model with <strong>InternVL2</strong> as the base open source model. With our evaluation, our new model has achieved about <strong>4x improvement</strong> in <strong>military object specificity</strong> when generating captions."
+          "content": "We named our final model DeepSub, a fine-tuned vision transformer model with InternVL2 as the base open source model. With our evaluation, our new model has achieved about 4x improvement in military object specificity when generating captions."
         }
       ],
       "mainContent": {
@@ -96,16 +96,16 @@
       "meta": {
         "role": "AI Web Developer",
         "company": "Being Bridges",
-        "projectDate": "May 2023 \u2013 Aug 2023"
+        "projectDate": "May 2023 – Aug 2023"
       },
       "overview": [
         {
           "type": "paragraph",
-          "content": "Our team partnered with a client promoting interfaith, interracial, and intercultural education to support trainers facing burnout from answering repetitive, sensitive questions. We developed an <strong>AI-powered web app</strong> that combines a <strong>curated FAQ system</strong> with a <strong>real-time chatbot</strong>, designed to <strong>handle complex topics</strong> respectfully and in line with the client's values."
+          "content": "<strong>An AI-powered web app that combines a curated FAQ system with a real-time chatbot, designed to handle complex topics respectfully and in line with the client's values.</strong>"
         },
         {
           "type": "paragraph",
-          "content": "The platform supports <strong>session-based customization</strong>, letting trainers tailor content and control access. A <strong>human-in-the-loop feedback system</strong> allows flagged responses to be reviewed and reused for few-shot training, enabling continuous improvement of the chatbot over time."
+          "content": "Our team partnered with a client promoting interfaith, interracial, and intercultural education to support trainers facing burnout from answering repetitive, sensitive questions. The platform supports session-based customization, letting trainers tailor content and control access. A human-in-the-loop feedback system allows flagged responses to be reviewed and reused for few-shot training, enabling continuous improvement of the chatbot over time."
         }
       ],
       "additionalImages": [],
@@ -135,12 +135,16 @@
         "role": "",
         "company": "",
         "projectType": "SUTD Deep Learning Project",
-        "projectDate": "Jan 2025 \u2013 May 2025"
+        "projectDate": "Jan 2025 – May 2025"
       },
       "overview": [
         {
           "type": "paragraph",
-          "content": "Designed and implemented an LSTM-based deep learning model in PyTorch to predict the next-day closing price of Bitcoin. The model uses 10+ years of historical data with engineered time-based features like day of the week and month. Achieved a test MAPE of ~2.48% and RMSE of ~$2519.98, demonstrating solid short-term forecasting capability for financial time series."
+          "content": "<strong>An LSTM-based deep learning model in PyTorch to predict the next-day closing price of Bitcoin.</strong>"
+        },
+        {
+          "type": "paragraph",
+          "content": "The model uses 10+ years of historical data with engineered time-based features like day of the week and month. Achieved a test MAPE of ~2.48% and RMSE of ~$2519.98, demonstrating solid short-term forecasting capability for financial time series."
         },
         {
           "type": "heading",
@@ -199,12 +203,16 @@
         "role": "",
         "company": "",
         "projectType": "SUTD Undergraduate Research Opportunities Project (UROP)",
-        "projectDate": "Aug 2023 \u2013 May 2024"
+        "projectDate": "Aug 2023 – May 2024"
       },
       "overview": [
         {
           "type": "paragraph",
-          "content": "A custom-built AI chatbot interface designed to enhance the documentation and learning experience. This project integrates features such as folder management, search, colored-tag filtering, and a prompt library system to streamline user workflows."
+          "content": "<strong>A custom-built AI chatbot interface designed to enhance the documentation and learning experience.</strong>"
+        },
+        {
+          "type": "paragraph",
+          "content": "This project integrates features such as folder management, search, colored-tag filtering, and a prompt library system to streamline user workflows."
         },
         {
           "type": "note",
@@ -256,12 +264,16 @@
         "role": "",
         "company": "",
         "projectType": "Personal Project",
-        "projectDate": "Dec 2025 \u2013 Present"
+        "projectDate": "Dec 2025 – Present"
       },
       "overview": [
         {
           "type": "paragraph",
-          "content": "A custom-built AI chatbot interface designed to do research about a given document or set of documents. It also supports <strong>website links</strong>. The main features of this project include <strong>document question answering</strong> and <strong>verification of answers</strong> from the AI assistant by displaying the relevant data used to generate the answer. The application is optimized document question answering using <strong>Retrieval Augmented Generation (RAG)</strong> techniques and <strong>AI agents</strong> to handle complex queries."
+          "content": "<strong>A custom-built AI chatbot interface designed to do research about a given document or set of documents.</strong>"
+        },
+        {
+          "type": "paragraph",
+          "content": "It also supports website links. The main features of this project include document question answering and verification of answers from the AI assistant by displaying the relevant data used to generate the answer. The application is optimized for document question answering using Retrieval Augmented Generation (RAG) techniques and AI agents to handle complex queries."
         },
         {
           "type": "note",
@@ -312,11 +324,11 @@
       "overview": [
         {
           "type": "paragraph",
-          "content": "<strong>Developed</strong> an AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs. The solution applies robust <strong>software engineering</strong> practices and <strong>large language models (LLMs)</strong> to analyze user-provided data and transform it into structured, client-compliant presentations."
+          "content": "<strong>An AI-driven application that automates the end-to-end generation of compliance report PowerPoint slides from custom data inputs.</strong>"
         },
         {
           "type": "paragraph",
-          "content": "In addition, a <strong>human-in-the-loop (HITL)</strong> workflow was implemented, enabling compliance managers to refine and edit the generated <strong>PPTX</strong> through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead."
+          "content": "The solution applies robust software engineering practices and large language models (LLMs) to analyze user-provided data and transform it into structured, client-compliant presentations. In addition, a human-in-the-loop (HITL) workflow was implemented, enabling compliance managers to refine and edit the generated PPTX through prompt-based requests. By replacing a fully manual reporting process, the application significantly improves productivity, reducing report creation time and operational overhead."
         }
       ],
       "mainContent": {
